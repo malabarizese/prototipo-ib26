@@ -13,13 +13,13 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Ilustra Black 2026 — 3 cursos com 85% OFF">
 <meta property="og:description" content="Perspectiva, pintura com marcadores e IA. De R$741 por R$97, acesso vitalício.">
-<meta property="og:url" content="https://malabarizese.github.io/prototipo-ib26/">
-<meta property="og:image" content="https://malabarizese.github.io/prototipo-ib26/img/og.jpg">
+<meta property="og:url" content="https://malabarizese.github.io/anabaronceli/">
+<meta property="og:image" content="https://malabarizese.github.io/anabaronceli/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Croquis de arquitetura pintados com marcador, Ilustra Black 2026">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Cg transform='rotate(45 32 32)'%3E%3Crect x='26' y='6' width='12' height='36' fill='%23C8F031'/%3E%3Crect x='26' y='6' width='12' height='6' fill='%23FF6A1F'/%3E%3Cpath d='M26 42h12l-6 14z' fill='%23E9D7B5'/%3E%3Cpath d='M30 51h4l-2 5z' fill='%23181818'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Cg transform='rotate(45 32 32)'%3E%3Crect x='26' y='6' width='12' height='36' fill='%23CBE66F'/%3E%3Crect x='26' y='6' width='12' height='6' fill='%23F26B2A'/%3E%3Cpath d='M26 42h12l-6 14z' fill='%23E9D7B5'/%3E%3Cpath d='M30 51h4l-2 5z' fill='%23181818'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preload" href="fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 /* ========== Fontes (hospedadas no próprio repo, sem Google Fonts) ========== */
@@ -33,7 +33,7 @@
 :root{
   --bg:#181818; --bg2:#1F1F1F; --bg3:#272727; --bg4:#313131;
   --ink:#F2F1EC; --muted:#A6A6A1; --dim:#6E6E6A;
-  --lime:#C8F031; --lime-ink:#141A00; --neon:#FF6A1F;
+  --lime:#CBE66F; --lime-ink:#1A2000; --neon:#F26B2A;
   --paper:#F1EEE6; --paper-ink:#1C1C1A; --paper-muted:#5D5B55; --graphite:#8C8C87;
   --hand:"Architects Daughter", "Manrope", system-ui, sans-serif;
   --sans:"Manrope", system-ui, sans-serif;
@@ -57,8 +57,8 @@ section{position:relative;padding:var(--s10) 0}
 .skip{position:absolute;left:-9999px;top:0;background:var(--lime);color:var(--lime-ink);padding:var(--s2) var(--s3);z-index:100;border-radius:8px}
 .skip:focus{left:var(--s4);top:var(--s4)}
 :focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:6px}
-[data-placeholder]{display:inline;background:rgba(255,106,31,.16);color:var(--neon);border:1px dashed var(--neon);border-radius:4px;padding:0 var(--s1);font-family:var(--sans);font-size:14px;line-height:20px;font-weight:600;white-space:normal}
-.paper [data-placeholder]{background:rgba(255,106,31,.12);color:#B8430A;border-color:#E2611F}
+[data-placeholder]{display:inline;background:rgba(242,107,42,.16);color:var(--neon);border:1px dashed var(--neon);border-radius:4px;padding:0 var(--s1);font-family:var(--sans);font-size:14px;line-height:20px;font-weight:600;white-space:normal}
+.paper [data-placeholder]{background:rgba(242,107,42,.12);color:#B8430A;border-color:#E2611F}
 
 /* ========== Faixa de protótipo ========== */
 .proto{background:var(--neon);color:#1A0A00;text-align:center;font-size:12px;line-height:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:var(--s1) var(--s4);position:relative;z-index:60}
@@ -74,8 +74,8 @@ section{position:relative;padding:var(--s10) 0}
 @media (max-width:420px){.logo small{display:none}.nav-in{gap:var(--s4)}}
 
 /* ========== Botões ========== */
-.btn{--h:var(--lime);display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);background:var(--h);color:var(--lime-ink);font-family:var(--sans);font-weight:600;font-size:16px;line-height:24px;text-decoration:none;padding:var(--s2) var(--s3);border-radius:999px;border:0;cursor:pointer;transition:transform .5s var(--ease),background-color .3s var(--ease),box-shadow .3s var(--ease);box-shadow:0 0 0 0 rgba(200,240,49,0)}
-.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px -8px rgba(200,240,49,.55)}
+.btn{--h:var(--lime);display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);background:var(--h);color:var(--lime-ink);font-family:var(--sans);font-weight:600;font-size:16px;line-height:24px;text-decoration:none;padding:var(--s2) var(--s3);border-radius:999px;border:0;cursor:pointer;transition:transform .5s var(--ease),background-color .3s var(--ease),box-shadow .3s var(--ease);box-shadow:0 0 0 0 rgba(203,230,111,0)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px -8px rgba(203,230,111,.55)}
 .btn:active{transform:translateY(1px) scale(.98)}
 .btn-lg{font-size:18px;line-height:28px;padding:var(--s3) var(--s5)}
 .btn svg{width:20px;height:20px;transition:transform .5s var(--ease)}
@@ -138,8 +138,8 @@ section{position:relative;padding:var(--s10) 0}
 .sheet{position:relative;background:var(--paper) var(--grid-paper);border-radius:4px;padding:var(--s3);box-shadow:0 30px 60px -20px rgba(0,0,0,.6),0 2px 0 rgba(0,0,0,.2);transform:rotate(2deg)}
 .sheet img{border-radius:2px;width:100%;aspect-ratio:4/5;object-fit:cover;background:#ddd}
 .sheet figcaption{font-family:var(--hand);color:var(--paper-ink);font-size:16px;line-height:24px;padding:var(--s2) var(--s1) 0;display:flex;justify-content:space-between}
-.tape{position:absolute;width:96px;height:28px;background:rgba(200,240,49,.62);top:-12px;left:50%;margin-left:-48px;transform:rotate(-4deg);border-radius:2px;mix-blend-mode:multiply;box-shadow:0 1px 2px rgba(0,0,0,.15)}
-.tape.neon{background:rgba(255,106,31,.6)}
+.tape{position:absolute;width:96px;height:28px;background:rgba(203,230,111,.62);top:-12px;left:50%;margin-left:-48px;transform:rotate(-4deg);border-radius:2px;mix-blend-mode:multiply;box-shadow:0 1px 2px rgba(0,0,0,.15)}
+.tape.neon{background:rgba(242,107,42,.6)}
 .tape.beige{background:rgba(232,220,190,.8)}
 .sheet-tag{position:absolute;left:-16px;bottom:48px;background:var(--bg);border:1px solid rgba(255,255,255,.14);color:var(--ink);font-family:var(--hand);font-size:16px;line-height:24px;padding:var(--s2) var(--s3);border-radius:8px;transform:rotate(-4deg)}
 .sheet-tag b{color:var(--lime);font-weight:400}
@@ -196,7 +196,7 @@ section{position:relative;padding:var(--s10) 0}
 .who{display:grid;gap:var(--s8);margin-top:var(--s7)}
 .notebook{position:relative;background:var(--paper);color:var(--paper-ink);border-radius:8px;padding:var(--s6) var(--s5) var(--s6) var(--s8);box-shadow:0 30px 60px -24px rgba(0,0,0,.7);
   background-image:repeating-linear-gradient(to bottom,transparent 0 39px,rgba(74,106,138,.22) 39px 40px);background-position:0 20px}
-.notebook::before{content:"";position:absolute;left:var(--s6);top:0;bottom:0;width:1px;background:rgba(255,106,31,.5)}
+.notebook::before{content:"";position:absolute;left:var(--s6);top:0;bottom:0;width:1px;background:rgba(242,107,42,.5)}
 .notebook::after{content:"";position:absolute;left:10px;top:var(--s5);bottom:var(--s5);width:12px;background:radial-gradient(circle,var(--bg) 4px,transparent 5px) 0 0/12px 40px repeat-y}
 .checks{list-style:none;display:grid;gap:0}
 .checks li{display:flex;gap:var(--s3);align-items:flex-start;font-size:16px;line-height:24px;padding:var(--s2) 0;min-height:40px}
@@ -267,7 +267,7 @@ section{position:relative;padding:var(--s10) 0}
 
 /* ========== Oferta ========== */
 .offer{display:grid;gap:var(--s8);align-items:start;margin-top:var(--s8)}
-.offer-card{position:relative;background:var(--bg2);border:1px solid rgba(200,240,49,.35);border-radius:24px;padding:var(--s6) var(--s5);box-shadow:0 0 0 6px rgba(200,240,49,.06),0 40px 80px -30px rgba(0,0,0,.8)}
+.offer-card{position:relative;background:var(--bg2);border:1px solid rgba(203,230,111,.35);border-radius:24px;padding:var(--s6) var(--s5);box-shadow:0 0 0 6px rgba(203,230,111,.06),0 40px 80px -30px rgba(0,0,0,.8)}
 .offer-card .ribbon{position:absolute;top:-14px;left:var(--s5);background:var(--neon);color:#1A0A00;font-size:12px;line-height:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:var(--s1) var(--s3)}
 .offer-card h3{font-size:24px;line-height:32px}
 .stack{list-style:none;margin-top:var(--s5);display:grid;gap:0}
@@ -291,7 +291,7 @@ section{position:relative;padding:var(--s10) 0}
 .compare{margin-top:var(--s5);display:grid;grid-template-columns:1fr 1fr;gap:var(--s2)}
 .compare div{border-radius:12px;padding:var(--s3);background:var(--bg3);font-size:14px;line-height:20px;color:var(--muted)}
 .compare div b{display:block;font-size:20px;line-height:28px;color:var(--ink);white-space:nowrap;margin-top:var(--s1)}
-.compare div.win{background:rgba(200,240,49,.12);color:var(--lime);outline:1px solid rgba(200,240,49,.4)}
+.compare div.win{background:rgba(203,230,111,.12);color:var(--lime);outline:1px solid rgba(203,230,111,.4)}
 .compare div.win b{color:var(--lime)}
 .compare div:not(.win) b{text-decoration:line-through;text-decoration-color:var(--neon);text-decoration-thickness:2px}
 .incl{list-style:none;margin-top:var(--s5);display:grid;gap:var(--s2)}
@@ -317,7 +317,7 @@ section{position:relative;padding:var(--s10) 0}
 .closed-msg{display:none}
 body.encerrado .closed-msg{display:block}
 body.encerrado .so-aberta{display:none !important}
-.closed-msg .box{border:1px dashed var(--neon);border-radius:16px;padding:var(--s5);background:rgba(255,106,31,.08)}
+.closed-msg .box{border:1px dashed var(--neon);border-radius:16px;padding:var(--s5);background:rgba(242,107,42,.08)}
 .closed-msg h3{font-size:24px;line-height:32px;color:var(--neon)}
 .closed-msg p{margin-top:var(--s2);color:#CFCFCA}
 .closed-msg .btn{margin-top:var(--s4)}
@@ -328,8 +328,10 @@ body.encerrado .closed-inline{display:block}
 .ana{display:grid;gap:var(--s8);align-items:center;margin-top:var(--s7)}
 .ana-art{position:relative;max-width:420px;justify-self:center;width:100%}
 .ana-art .sheet{transform:rotate(-2deg)}
-.ana-art .sheet img{aspect-ratio:1/1}
-.ana-photo{position:absolute;right:-8px;bottom:-24px;width:132px;height:156px;background:var(--bg3);border:1px dashed var(--neon);border-radius:8px;display:grid;place-items:center;text-align:center;padding:var(--s2);transform:rotate(4deg);font-size:12px;line-height:16px;color:var(--neon);font-weight:600}
+.ana-art .sheet img{aspect-ratio:4/5;object-position:center 30%}
+.ana-photo{position:absolute;right:-12px;bottom:-32px;width:148px;background:var(--paper);padding:var(--s2) var(--s2) var(--s1);border-radius:4px;transform:rotate(5deg);box-shadow:0 20px 40px -12px rgba(0,0,0,.7)}
+.ana-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
+.ana-photo figcaption{font-family:var(--hand);font-size:14px;line-height:20px;color:var(--paper-ink);padding-top:var(--s1)}
 .ana-txt p{margin-top:var(--s4);color:#CFCFCA;font-size:18px;line-height:28px}
 .ana-txt .quote{font-family:var(--hand);color:var(--ink);font-size:24px;line-height:32px}
 .ana-links{margin-top:var(--s5);display:flex;gap:var(--s3);flex-wrap:wrap}
@@ -422,20 +424,20 @@ body.encerrado .sticky{display:none}
     <svg data-tool="lapis" class="show" viewBox="0 0 24 120" fill="none">
       <rect x="6" y="2" width="12" height="12" rx="2" fill="#FF8FA3"/>
       <rect x="6" y="13" width="12" height="7" fill="#BDBDB8"/><path d="M6 15.5h12M6 18h12" stroke="#8E8E8A" stroke-width=".8"/>
-      <rect x="6" y="20" width="12" height="72" fill="#C8F031"/><path d="M10 20v72M14 20v72" stroke="#9FC21F" stroke-width=".8"/>
+      <rect x="6" y="20" width="12" height="72" fill="#CBE66F"/><path d="M10 20v72M14 20v72" stroke="#A9C24E" stroke-width=".8"/>
       <path d="M6 92h12l-6 22z" fill="#E9D7B5"/><path d="M10.4 106h3.2L12 114z" fill="#3B3B38"/>
     </svg>
     <svg data-tool="lima" viewBox="0 0 24 120" fill="none">
-      <rect x="5" y="2" width="14" height="30" rx="4" fill="#C8F031"/>
+      <rect x="5" y="2" width="14" height="30" rx="4" fill="#CBE66F"/>
       <rect x="5" y="30" width="14" height="66" rx="2" fill="#2A2A2A" stroke="#4A4A4A"/>
-      <rect x="5" y="54" width="14" height="10" fill="#C8F031"/>
-      <path d="M7 96h10v8H7z" fill="#3A3A3A"/><path d="M8.5 104h7l-1.6 12h-5z" fill="#C8F031"/>
+      <rect x="5" y="54" width="14" height="10" fill="#CBE66F"/>
+      <path d="M7 96h10v8H7z" fill="#3A3A3A"/><path d="M8.5 104h7l-1.6 12h-5z" fill="#CBE66F"/>
     </svg>
     <svg data-tool="laranja" viewBox="0 0 24 120" fill="none">
-      <rect x="5" y="2" width="14" height="30" rx="4" fill="#FF6A1F"/>
+      <rect x="5" y="2" width="14" height="30" rx="4" fill="#F26B2A"/>
       <rect x="5" y="30" width="14" height="66" rx="2" fill="#2A2A2A" stroke="#4A4A4A"/>
-      <rect x="5" y="54" width="14" height="10" fill="#FF6A1F"/>
-      <path d="M7 96h10v8H7z" fill="#3A3A3A"/><path d="M8.5 104h7l-1.6 12h-5z" fill="#FF6A1F"/>
+      <rect x="5" y="54" width="14" height="10" fill="#F26B2A"/>
+      <path d="M7 96h10v8H7z" fill="#3A3A3A"/><path d="M8.5 104h7l-1.6 12h-5z" fill="#F26B2A"/>
     </svg>
   </div>
   <div class="rail-label"></div>
@@ -488,7 +490,7 @@ body.encerrado .sticky{display:none}
     <div class="sheet-wrap rv">
       <figure class="sheet">
         <span class="tape"></span>
-        <img src="img/hero.jpg" alt="Croqui de arquitetura pintado, da Ana Baronceli" width="900" height="1125" fetchpriority="high" onerror="this.parentNode.classList.add('noimg')">
+        <img src="img/hero.jpg" alt="Croqui de interior pintado com marcadores, com os marcadores ao redor da folha" width="900" height="1125" fetchpriority="high" onerror="this.parentNode.classList.add('noimg')">
         <figcaption><span>do papel</span><span>→ cor → imagem</span></figcaption>
       </figure>
       <div class="sheet-tag">3 cursos por <b class="nowrap">R$97</b></div>
@@ -586,7 +588,7 @@ body.encerrado .sticky{display:none}
     <div class="courses">
       <article class="course rv">
         <span class="tape beige"></span>
-        <div class="media"><img src="img/curso-perspectiva.jpg" alt="Croqui em perspectiva, curso Perspectiva sem Mistério" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 01</span></div>
+        <div class="media"><img src="img/curso-perspectiva.jpg" alt="Croqui de fachada em perspectiva sendo desenhado a lápis" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 01</span></div>
         <div class="body">
           <h3>Perspectiva sem Mistério</h3>
           <p class="from">Valor normal: <s>R$147</s></p>
@@ -600,7 +602,7 @@ body.encerrado .sticky{display:none}
       </article>
       <article class="course rv">
         <span class="tape"></span>
-        <div class="media"><img src="img/curso-pintura.jpg" alt="Croqui pintado com marcadores, curso Pintura com Marcadores" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 02</span></div>
+        <div class="media"><img src="img/curso-pintura.jpg" alt="Mão pintando um croqui de interior com marcador" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 02</span></div>
         <div class="body">
           <h3>Pintura com Marcadores</h3>
           <p class="from">Valor normal: <s>R$197</s></p>
@@ -614,7 +616,7 @@ body.encerrado .sticky{display:none}
       </article>
       <article class="course rv">
         <span class="tape neon"></span>
-        <div class="media"><img src="img/curso-ia.jpg" alt="Croqui transformado em imagem com IA, curso Do Papel à Imagem com IA" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 03</span></div>
+        <div class="media"><img src="img/curso-ia.jpg" alt="Croqui de prédio ao lado da imagem realista gerada a partir dele" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 03</span></div>
         <div class="body">
           <h3>Do Papel à Imagem com IA</h3>
           <p class="from">Valor normal: <s>R$397</s></p>
@@ -644,10 +646,10 @@ body.encerrado .sticky{display:none}
       <p class="lead">Trabalhos de alunas que a Ana já mostra na página dela.</p>
     </div>
     <div class="results">
-      <figure class="polaroid rv"><span class="tape beige"></span><img src="img/aluna-1.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
-      <figure class="polaroid rv"><span class="tape"></span><img src="img/aluna-2.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
-      <figure class="polaroid rv"><span class="tape neon"></span><img src="img/aluna-3.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
-      <figure class="polaroid rv"><span class="tape beige"></span><img src="img/aluna-4.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+      <figure class="polaroid rv"><span class="tape beige"></span><img src="img/aluna-1.jpg" alt="Croqui pintado com marcadores, post de @sketchsssss" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+      <figure class="polaroid rv"><span class="tape"></span><img src="img/aluna-2.jpg" alt="Croqui pintado com marcadores, post de @estudiommarq" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+      <figure class="polaroid rv"><span class="tape neon"></span><img src="img/aluna-3.jpg" alt="Croqui pintado com marcadores, post de @camilarodrigues_arq" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+      <figure class="polaroid rv"><span class="tape beige"></span><img src="img/aluna-4.jpg" alt="Croqui pintado com marcadores, post de @isaoliveira.arq" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
     </div>
     <div class="testis">
       <div class="testi rv"><p>“[DEPOIMENTO REAL AQUI]”</p><div class="who-t"><i></i><span>Nome, cidade · curso</span></div></div>
@@ -750,10 +752,10 @@ body.encerrado .sticky{display:none}
     <div class="ana-art rv">
       <figure class="sheet">
         <span class="tape neon"></span>
-        <img src="img/ana-trabalho.jpg" alt="Ilustração de arquitetura feita pela Ana Baronceli" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
-        <figcaption><span>trabalho da Ana</span><span>portfólio</span></figcaption>
+        <img src="img/ana.jpg" alt="Ana Baronceli segurando um pote de lápis de cor" loading="lazy" width="800" height="1000" onerror="this.parentNode.classList.add('noimg')">
+        <figcaption><span>Ana Baronceli</span></figcaption>
       </figure>
-      <div class="ana-photo">[FOTO DA ANA AQUI]</div>
+      <figure class="ana-photo"><img src="img/ana-trabalho.jpg" alt="Croqui de um prédio pintado com marcador, feito pela Ana" loading="lazy" width="500" height="506"><figcaption>trabalho da Ana</figcaption></figure>
     </div>
     <div class="ana-txt rv">
       <span class="kicker">Quem ensina</span>
@@ -927,7 +929,7 @@ var PRAZO = new Date("2026-11-30T20:00:00-03:00");
   var rail = document.querySelector(".rail"), line = rail.querySelector(".rail-line"), tool = rail.querySelector(".rail-tool"),
       label = rail.querySelector(".rail-label"), svgs = tool.querySelectorAll("svg"),
       secs = [].slice.call(document.querySelectorAll("main section[data-tool]")),
-      colors = {lapis:"#8C8C87", lima:"#C8F031", laranja:"#FF6A1F"}, cur = "", curLabel = "", lastP = 0, tilt = 0, ticking = false;
+      colors = {lapis:"#8C8C87", lima:"#CBE66F", laranja:"#F26B2A"}, cur = "", curLabel = "", lastP = 0, tilt = 0, ticking = false;
   function paint(){
     var max = document.documentElement.scrollHeight - innerHeight, stops = [], prev = null;
     secs.forEach(function(s){
