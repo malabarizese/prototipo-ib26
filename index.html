@@ -106,19 +106,28 @@ section{position:relative;padding:var(--s10) 0}
 .rv.on{opacity:1;transform:none}
 
 /* ========== Trilho do lápis ========== */
-.rail{position:fixed;z-index:40;right:6px;top:96px;bottom:110px;width:20px;pointer-events:none}
-.rail-track{position:absolute;left:50%;top:0;bottom:0;width:1px;margin-left:-.5px;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.14) 0 4px,transparent 4px 10px)}
-.rail-line{position:absolute;left:50%;top:0;height:100%;width:2px;margin-left:-1px;border-radius:2px;transform-origin:top center;transform:scaleY(0);background:var(--graphite)}
-.rail-tool{position:absolute;left:50%;top:0;width:18px;height:92px;margin-left:-9px;will-change:transform}
+.rails{position:fixed;z-index:40;left:0;right:0;top:96px;bottom:110px;pointer-events:none;--rx:16px}
+.rail-track{position:absolute;top:0;bottom:0;width:1px;margin-left:-.5px;left:var(--rx);background:repeating-linear-gradient(to bottom,rgba(255,255,255,.14) 0 4px,transparent 4px 10px)}
+.rail-track.r{left:auto;right:var(--rx);margin:0 -.5px 0 0}
+.rail-line{position:absolute;top:0;height:100%;width:2px;margin-left:-1px;left:var(--rx);border-radius:2px;background:var(--graphite);clip-path:inset(0 0 100% 0)}
+.rail-line.r{left:auto;right:var(--rx);margin:0 -1px 0 0}
+.rail-x{position:absolute;left:0;top:0;width:0;height:100%;transition:transform 1.2s var(--ease)}
+.rail-tool{position:absolute;left:-9px;top:0;width:18px;height:92px;will-change:transform}
 .rail-tool svg{position:absolute;inset:0;width:100%;height:100%;transition:opacity .4s var(--ease),transform .5s var(--ease)}
 .rail-tool svg:not(.show){opacity:0;transform:translateY(-12px) rotate(-8deg)}
-.rail-label{position:absolute;right:28px;top:0;font-family:var(--hand);font-size:14px;line-height:20px;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity .4s var(--ease)}
+.rail-tool .tilt{position:absolute;inset:0;transition:transform .6s var(--ease)}
+.rails.crossing .rail-tool .tilt{transform:rotate(-82deg)}
+.rails.on-right.crossing .rail-tool .tilt{transform:rotate(-82deg)}
+.rails.on-left.crossing .rail-tool .tilt{transform:rotate(82deg)}
+.rail-label{position:absolute;left:20px;top:0;font-family:var(--hand);font-size:14px;line-height:20px;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity .4s var(--ease)}
+.rails.on-right .rail-label{left:auto;right:20px}
 @media (min-width:900px){
-  .rail{right:auto;left:max(12px,calc((100vw - var(--wrap))/2 - 56px));top:110px;bottom:48px;width:28px}
-  .rail-tool{width:22px;height:118px;margin-left:-11px}
-  .rail-label{right:auto;left:34px;opacity:1}
+  .rails{top:110px;bottom:48px;--rx:max(26px,calc((100vw - var(--wrap))/2 - 42px))}
+  .rail-tool{left:-11px;width:22px;height:118px}
+  .rail-label{left:24px;opacity:1}
+  .rails.on-right .rail-label{right:24px}
 }
-
+.ana-cross{position:absolute;left:0;right:0;top:0;width:100%;height:56px;color:var(--graphite);overflow:visible;pointer-events:none}
 /* ========== Hero ========== */
 .hero{padding:var(--s9) 0 var(--s10);overflow:hidden}
 .hero-persp{position:absolute;inset:0;width:100%;height:100%;opacity:.16;pointer-events:none}
@@ -417,10 +426,11 @@ body.encerrado .sticky{display:none}
 </header>
 
 <!-- Trilho: o lápis (e depois os marcadores) acompanha a leitura -->
-<div class="rail" aria-hidden="true">
-  <div class="rail-track"></div>
-  <div class="rail-line"></div>
-  <div class="rail-tool">
+<div class="rails on-left" aria-hidden="true">
+  <div class="rail-track"></div><div class="rail-track r"></div>
+  <div class="rail-line"></div><div class="rail-line r"></div>
+  <div class="rail-x">
+    <div class="rail-tool"><div class="tilt">
     <svg data-tool="lapis" class="show" viewBox="0 0 24 120" fill="none">
       <rect x="6" y="2" width="12" height="12" rx="2" fill="#FF8FA3"/>
       <rect x="6" y="13" width="12" height="7" fill="#BDBDB8"/><path d="M6 15.5h12M6 18h12" stroke="#8E8E8A" stroke-width=".8"/>
@@ -439,8 +449,9 @@ body.encerrado .sticky{display:none}
       <rect x="5" y="54" width="14" height="10" fill="#F26B2A"/>
       <path d="M7 96h10v8H7z" fill="#3A3A3A"/><path d="M8.5 104h7l-1.6 12h-5z" fill="#F26B2A"/>
     </svg>
+    </div></div>
+    <div class="rail-label"></div>
   </div>
-  <div class="rail-label"></div>
 </div>
 
 <main id="conteudo">
@@ -747,7 +758,8 @@ body.encerrado .sticky{display:none}
 </section>
 
 <!-- ================= ANA ================= -->
-<section id="ana" data-tool="lapis" data-label="quem ensina">
+<section id="ana" data-tool="lapis" data-label="quem ensina" data-cross>
+  <svg class="ana-cross sk" viewBox="0 0 1200 56" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path pathLength="1" d="M0 28C140 14 260 40 420 26S700 12 860 30 1080 38 1186 26"/><path pathLength="1" d="M1170 16l16 10-16 12"/></svg>
   <div class="wrap ana">
     <div class="ana-art rv">
       <figure class="sheet">
@@ -925,33 +937,48 @@ var PRAZO = new Date("2026-11-30T20:00:00-03:00");
     },{once:true});
   });
 
-  /* ---------- trilho: lápis e marcadores acompanham a leitura ---------- */
-  var rail = document.querySelector(".rail"), line = rail.querySelector(".rail-line"), tool = rail.querySelector(".rail-tool"),
-      label = rail.querySelector(".rail-label"), svgs = tool.querySelectorAll("svg"),
-      secs = [].slice.call(document.querySelectorAll("main section[data-tool]")),
-      colors = {lapis:"#8C8C87", lima:"#CBE66F", laranja:"#F26B2A"}, cur = "", curLabel = "", lastP = 0, tilt = 0, ticking = false;
+  /* ---------- trilho: lápis e marcadores acompanham a leitura ----------
+     Começa na esquerda; na seção "Quem ensina" (data-cross) cruza a página e segue pela direita. */
+  var rails = document.querySelector(".rails"), lines = rails.querySelectorAll(".rail-line"), lineL = lines[0], lineR = lines[1],
+      rx = rails.querySelector(".rail-x"), tool = rails.querySelector(".rail-tool"), label = rails.querySelector(".rail-label"),
+      tracks = rails.querySelectorAll(".rail-track"), svgs = tool.querySelectorAll("svg"),
+      secs = [].slice.call(document.querySelectorAll("main section[data-tool]")), crossSec = document.querySelector("[data-cross]"),
+      colors = {lapis:"#8C8C87", lima:"#CBE66F", laranja:"#F26B2A"}, cur = "", curLabel = "", lastP = 0, tilt = 0, ticking = false,
+      side = "", crossT = null;
+  function maxScroll(){ return Math.max(1, document.documentElement.scrollHeight - innerHeight); }
   function paint(){
-    var max = document.documentElement.scrollHeight - innerHeight, stops = [], prev = null;
+    var max = maxScroll(), stops = [], prev = null;
     secs.forEach(function(s){
       var r = Math.max(0, Math.min(1, (s.offsetTop - innerHeight*0.5) / max)), c = colors[s.dataset.tool];
       if (prev) stops.push(prev+" "+(r*100).toFixed(2)+"%");
       stops.push(c+" "+(r*100).toFixed(2)+"%"); prev = c;
     });
     stops.push(prev+" 100%");
-    line.style.background = "linear-gradient(to bottom,"+stops.join(",")+")";
+    var g = "linear-gradient(to bottom,"+stops.join(",")+")"; lineL.style.background = g; lineR.style.background = g;
   }
   function frame(){
     ticking = false;
-    var max = document.documentElement.scrollHeight - innerHeight, pr = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0,
-        h = rail.clientHeight, th = tool.clientHeight;
+    var max = maxScroll(), pr = Math.min(1, Math.max(0, scrollY / max)),
+        pA = crossSec ? Math.max(0, Math.min(1, (crossSec.offsetTop - innerHeight*0.5) / max)) : 2,
+        h = rails.clientHeight, th = tool.clientHeight;
     var v = pr - lastP; lastP = pr; tilt += ((v*900) - tilt) * 0.3; tilt = Math.max(-10, Math.min(10, tilt));
-    line.style.transform = "scaleY("+pr+")";
-    tool.style.transform = "translateY("+(pr*h - th)+"px) rotate("+(8 + tilt).toFixed(2)+"deg)";
+    var right = pr >= pA;
+    // linhas: esquerda até o cruzamento, direita a partir dele
+    lineL.style.clipPath = "inset(0 0 "+((1 - Math.min(pr, pA))*100).toFixed(3)+"% 0)";
+    lineR.style.clipPath = right ? "inset("+(pA*100).toFixed(3)+"% 0 "+((1 - pr)*100).toFixed(3)+"% 0)" : "inset(0 0 100% 0)";
+    var newSide = right ? "right" : "left";
+    if (newSide !== side){
+      if (side){ rails.classList.add("crossing"); clearTimeout(crossT); crossT = setTimeout(function(){ rails.classList.remove("crossing") }, 1100); }
+      side = newSide; rails.classList.toggle("on-right", right); rails.classList.toggle("on-left", !right);
+    }
+    var x = right ? tracks[1].offsetLeft + 0.5 : tracks[0].offsetLeft + 0.5;
+    rx.style.transform = "translateX("+x+"px)";
+    tool.style.transform = "translateY("+(pr*h - th)+"px) rotate("+((right ? -8 : 8) + tilt).toFixed(2)+"deg)";
+    label.style.transform = "translateY("+(pr*h - 28)+"px)";
     var mid = scrollY + innerHeight*0.5, active = secs[0];
     secs.forEach(function(s){ if (s.offsetTop <= mid) active = s; });
     if (active.dataset.tool !== cur){ cur = active.dataset.tool; svgs.forEach(function(sv){ sv.classList.toggle("show", sv.dataset.tool === cur) }); }
     if (active.dataset.label !== curLabel){ curLabel = active.dataset.label; label.textContent = curLabel; }
-    label.style.transform = "translateY("+(pr*h - 28)+"px)";
     if (Math.abs(tilt) > 0.2 && !ticking){ ticking = true; requestAnimationFrame(frame); }
   }
   function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(frame); } }
