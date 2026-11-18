@@ -531,7 +531,8 @@ body.encerrado .sticky{display:none}
 </div>
 
 <!-- ================= PARA QUEM É ================= -->
-<section id="para-quem" data-tool="lapis" data-label="para quem">
+<section id="para-quem" data-tool="lapis" data-label="para quem" data-cross>
+  <svg class="ana-cross sk" viewBox="0 0 1200 56" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path pathLength="1" d="M0 28C140 14 260 40 420 26S700 12 860 30 1080 38 1186 26"/><path pathLength="1" d="M1170 16l16 10-16 12"/></svg>
   <div class="wrap who">
     <div class="rv">
       <span class="kicker">Para quem é</span>
@@ -758,8 +759,7 @@ body.encerrado .sticky{display:none}
 </section>
 
 <!-- ================= ANA ================= -->
-<section id="ana" data-tool="lapis" data-label="quem ensina" data-cross>
-  <svg class="ana-cross sk" viewBox="0 0 1200 56" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path pathLength="1" d="M0 28C140 14 260 40 420 26S700 12 860 30 1080 38 1186 26"/><path pathLength="1" d="M1170 16l16 10-16 12"/></svg>
+<section id="ana" data-tool="lapis" data-label="quem ensina">
   <div class="wrap ana">
     <div class="ana-art rv">
       <figure class="sheet">
@@ -938,7 +938,7 @@ var PRAZO = new Date("2026-11-30T20:00:00-03:00");
   });
 
   /* ---------- trilho: lápis e marcadores acompanham a leitura ----------
-     Começa na esquerda; na seção "Quem ensina" (data-cross) cruza a página e segue pela direita. */
+     Começa na esquerda; na seção "Para quem é" (data-cross) cruza a página e segue pela direita. */
   var rails = document.querySelector(".rails"), lines = rails.querySelectorAll(".rail-line"), lineL = lines[0], lineR = lines[1],
       rx = rails.querySelector(".rail-x"), tool = rails.querySelector(".rail-tool"), label = rails.querySelector(".rail-label"),
       tracks = rails.querySelectorAll(".rail-track"), svgs = tool.querySelectorAll("svg"),
