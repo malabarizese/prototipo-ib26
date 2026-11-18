@@ -1,0 +1,34 @@
+# Baixa as imagens da página atual da Ana (anabaronceli.com.br) para dentro do repo,
+# para a página não depender de hotlink. Roda uma vez quando _raw/sources.txt muda.
+name: baixar-imagens
+on:
+  workflow_dispatch:
+  push:
+    paths: ["_raw/sources.txt"]
+permissions:
+  contents: write
+jobs:
+  baixar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar originais
+        run: |
+          set -u
+          cd _raw
+          while read -r f; do
+            [ -z "$f" ] && continue
+            curl -fsSL --retry 2 -o "$f" "https://assets.zyrosite.com/BBlFYhmBnTE4dvfw/$f" \
+              || curl -fsSL --retry 2 -o "$f" "https://assets.zyrosite.com/cdn-cgi/image/format=jpeg,w=1600/BBlFYhmBnTE4dvfw/$f" \
+              || echo "FALHOU $f" >> falhas.txt
+          done < sources.txt
+          curl -fsSL -o yt-KIyU7-NWHYI.jpg "https://i.ytimg.com/vi/KIyU7-NWHYI/maxresdefault.jpg" \
+            || curl -fsSL -o yt-KIyU7-NWHYI.jpg "https://i.ytimg.com/vi/KIyU7-NWHYI/hqdefault.jpg" || true
+          ls -la
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add _raw
+          git commit -m "Imagens originais da página da Ana" || echo "nada novo"
+          git push

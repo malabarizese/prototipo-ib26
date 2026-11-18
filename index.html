@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- PROTÓTIPO: escondido de buscadores. Não remover enquanto for teste. -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<title>Ilustra Black 2026 — 3 cursos com 85% OFF</title>
+<meta name="description" content="Perspectiva, pintura com marcadores e IA: 3 cursos completos da arquiteta Ana Baronceli de R$741 por R$97, com acesso vitalício e garantia de 7 dias.">
+<meta name="theme-color" content="#181818">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Ilustra Black 2026 — 3 cursos com 85% OFF">
+<meta property="og:description" content="Perspectiva, pintura com marcadores e IA. De R$741 por R$97, acesso vitalício.">
+<meta property="og:url" content="https://malabarizese.github.io/prototipo-ib26/">
+<meta property="og:image" content="https://malabarizese.github.io/prototipo-ib26/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Croquis de arquitetura pintados com marcador, Ilustra Black 2026">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Cg transform='rotate(45 32 32)'%3E%3Crect x='26' y='6' width='12' height='36' fill='%23C8F031'/%3E%3Crect x='26' y='6' width='12' height='6' fill='%23FF6A1F'/%3E%3Cpath d='M26 42h12l-6 14z' fill='%23E9D7B5'/%3E%3Cpath d='M30 51h4l-2 5z' fill='%23181818'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preload" href="fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* ========== Fontes (hospedadas no próprio repo, sem Google Fonts) ========== */
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Architects Daughter";src:url(fonts/architects-daughter-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+
+/* ========== Tokens ========== */
+:root{
+  --bg:#181818; --bg2:#1F1F1F; --bg3:#272727; --bg4:#313131;
+  --ink:#F2F1EC; --muted:#A6A6A1; --dim:#6E6E6A;
+  --lime:#C8F031; --lime-ink:#141A00; --neon:#FF6A1F;
+  --paper:#F1EEE6; --paper-ink:#1C1C1A; --paper-muted:#5D5B55; --graphite:#8C8C87;
+  --hand:"Architects Daughter", "Manrope", system-ui, sans-serif;
+  --sans:"Manrope", system-ui, sans-serif;
+  --ease:cubic-bezier(0.22,1,0.36,1);
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:40px;--s8:48px;--s9:64px;--s10:80px;--s11:96px;
+  --wrap:1120px;
+  --grid:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M32 0H0v32' fill='none' stroke='%23ffffff' stroke-opacity='.045'/%3E%3C/svg%3E");
+  --grid-paper:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M16 0H0v16' fill='none' stroke='%234A6A8A' stroke-opacity='.10'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg) var(--grid);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;font-weight:700;letter-spacing:-0.02em}
+p,li{text-wrap:pretty}
+.nowrap,.preco,.price{white-space:nowrap}
+.hand{font-family:var(--hand);font-weight:400;letter-spacing:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--s5)}
+section{position:relative;padding:var(--s10) 0}
+.skip{position:absolute;left:-9999px;top:0;background:var(--lime);color:var(--lime-ink);padding:var(--s2) var(--s3);z-index:100;border-radius:8px}
+.skip:focus{left:var(--s4);top:var(--s4)}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:6px}
+[data-placeholder]{display:inline;background:rgba(255,106,31,.16);color:var(--neon);border:1px dashed var(--neon);border-radius:4px;padding:0 var(--s1);font-family:var(--sans);font-size:14px;line-height:20px;font-weight:600;white-space:normal}
+.paper [data-placeholder]{background:rgba(255,106,31,.12);color:#B8430A;border-color:#E2611F}
+
+/* ========== Faixa de protótipo ========== */
+.proto{background:var(--neon);color:#1A0A00;text-align:center;font-size:12px;line-height:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:var(--s1) var(--s4);position:relative;z-index:60}
+
+/* ========== Navegação ========== */
+.nav{position:sticky;top:var(--s3);z-index:50;display:flex;justify-content:center;padding:0 var(--s4);margin-top:var(--s3);pointer-events:none}
+.nav-in{pointer-events:auto;display:flex;align-items:center;gap:var(--s5);padding:var(--s2) var(--s2) var(--s2) var(--s4);border-radius:999px;background:rgba(31,31,31,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08)}
+.logo{display:flex;align-items:baseline;gap:var(--s2);text-decoration:none}
+.logo b{font-family:var(--hand);font-weight:400;font-size:20px;line-height:28px;color:var(--ink)}
+.logo small{font-size:12px;line-height:16px;font-weight:700;color:var(--neon);letter-spacing:.06em;text-transform:uppercase}
+.nav .btn{font-size:14px;line-height:20px;white-space:nowrap}
+.logo b{white-space:nowrap}
+@media (max-width:420px){.logo small{display:none}.nav-in{gap:var(--s4)}}
+
+/* ========== Botões ========== */
+.btn{--h:var(--lime);display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);background:var(--h);color:var(--lime-ink);font-family:var(--sans);font-weight:600;font-size:16px;line-height:24px;text-decoration:none;padding:var(--s2) var(--s3);border-radius:999px;border:0;cursor:pointer;transition:transform .5s var(--ease),background-color .3s var(--ease),box-shadow .3s var(--ease);box-shadow:0 0 0 0 rgba(200,240,49,0)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px -8px rgba(200,240,49,.55)}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn-lg{font-size:18px;line-height:28px;padding:var(--s3) var(--s5)}
+.btn svg{width:20px;height:20px;transition:transform .5s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.22)}
+.btn-ghost:hover{background:rgba(255,255,255,.06);box-shadow:none}
+.btn[aria-disabled="true"]{background:var(--bg4);color:var(--muted);pointer-events:none;box-shadow:none}
+.cta-note{margin-top:var(--s3);font-size:14px;line-height:20px;color:var(--muted);display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4)}
+.cta-note span{display:inline-flex;align-items:center;gap:var(--s1);white-space:nowrap}
+.cta-note svg{width:16px;height:16px;color:var(--lime)}
+
+/* ========== Marcador (grifo) ========== */
+.hl{position:relative;display:inline-block;color:inherit;background:none;z-index:0;padding:0 .08em;-webkit-text-fill-color:currentColor}
+.hl::before{content:"";position:absolute;z-index:-1;left:-.06em;right:-.06em;top:.12em;bottom:.02em;background:var(--lime);border-radius:.18em .5em .22em .6em;transform:scaleX(0) skewX(-6deg) rotate(-1deg);transform-origin:left center;transition:transform .9s var(--ease) .15s;opacity:.95}
+.hl.on::before{transform:scaleX(1) skewX(-6deg) rotate(-1deg)}
+.hl.on{color:var(--lime-ink);transition:color .4s var(--ease) .5s}
+.hl.neon::before{background:var(--neon)}
+.hl.neon.on{color:#1A0A00}
+.hl.thin::before{top:auto;height:.32em;bottom:.02em;opacity:.85}
+.hl.thin.on{color:inherit}
+
+/* traços desenhados à mão */
+.sk path,.sk line,.sk ellipse,.sk circle,.sk polyline{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.2s var(--ease)}
+.sk.on path,.sk.on line,.sk.on ellipse,.sk.on circle,.sk.on polyline{stroke-dashoffset:0}
+
+/* revelação ao rolar */
+.rv{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv.on{opacity:1;transform:none}
+
+/* ========== Trilho do lápis ========== */
+.rail{position:fixed;z-index:40;right:6px;top:96px;bottom:110px;width:20px;pointer-events:none}
+.rail-track{position:absolute;left:50%;top:0;bottom:0;width:1px;margin-left:-.5px;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.14) 0 4px,transparent 4px 10px)}
+.rail-line{position:absolute;left:50%;top:0;height:100%;width:2px;margin-left:-1px;border-radius:2px;transform-origin:top center;transform:scaleY(0);background:var(--graphite)}
+.rail-tool{position:absolute;left:50%;top:0;width:18px;height:92px;margin-left:-9px;will-change:transform}
+.rail-tool svg{position:absolute;inset:0;width:100%;height:100%;transition:opacity .4s var(--ease),transform .5s var(--ease)}
+.rail-tool svg:not(.show){opacity:0;transform:translateY(-12px) rotate(-8deg)}
+.rail-label{position:absolute;right:28px;top:0;font-family:var(--hand);font-size:14px;line-height:20px;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity .4s var(--ease)}
+@media (min-width:900px){
+  .rail{right:auto;left:max(12px,calc((100vw - var(--wrap))/2 - 56px));top:110px;bottom:48px;width:28px}
+  .rail-tool{width:22px;height:118px;margin-left:-11px}
+  .rail-label{right:auto;left:34px;opacity:1}
+}
+
+/* ========== Hero ========== */
+.hero{padding:var(--s9) 0 var(--s10);overflow:hidden}
+.hero-persp{position:absolute;inset:0;width:100%;height:100%;opacity:.16;pointer-events:none}
+.hero-persp line,.hero-persp path{stroke:#fff;stroke-width:1;fill:none;vector-effect:non-scaling-stroke}
+.hero-grid{position:relative;display:grid;gap:var(--s8);align-items:center}
+.eyebrow{display:inline-flex;align-items:center;flex-wrap:wrap;gap:var(--s2);font-size:12px;line-height:16px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.eyebrow .tag{background:var(--neon);color:#1A0A00;border-radius:4px;padding:var(--s1) var(--s2)}
+.hero h1{margin-top:var(--s5);font-size:36px;line-height:40px;max-width:680px;background:linear-gradient(90deg,#FFFFFF,#9B9B9B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .hl{-webkit-text-fill-color:#fff}
+.hero h1 .hl.on{-webkit-text-fill-color:var(--lime-ink)}
+.hero .sub{margin-top:var(--s5);max-width:680px;font-size:18px;line-height:28px;color:#CFCFCA}
+.hero .sub strong{color:var(--ink);font-weight:600}
+.hero-cta{margin-top:var(--s6)}
+.note-hand{display:flex;gap:var(--s3);align-items:flex-start;margin-top:var(--s6);color:var(--lime);font-family:var(--hand);font-size:20px;line-height:28px;max-width:360px}
+.note-hand svg{flex:none;width:48px;height:40px;color:var(--lime);margin-top:-4px}
+.sheet-wrap{position:relative;justify-self:center;width:min(100%,460px)}
+.sheet{position:relative;background:var(--paper) var(--grid-paper);border-radius:4px;padding:var(--s3);box-shadow:0 30px 60px -20px rgba(0,0,0,.6),0 2px 0 rgba(0,0,0,.2);transform:rotate(2deg)}
+.sheet img{border-radius:2px;width:100%;aspect-ratio:4/5;object-fit:cover;background:#ddd}
+.sheet figcaption{font-family:var(--hand);color:var(--paper-ink);font-size:16px;line-height:24px;padding:var(--s2) var(--s1) 0;display:flex;justify-content:space-between}
+.tape{position:absolute;width:96px;height:28px;background:rgba(200,240,49,.62);top:-12px;left:50%;margin-left:-48px;transform:rotate(-4deg);border-radius:2px;mix-blend-mode:multiply;box-shadow:0 1px 2px rgba(0,0,0,.15)}
+.tape.neon{background:rgba(255,106,31,.6)}
+.tape.beige{background:rgba(232,220,190,.8)}
+.sheet-tag{position:absolute;left:-16px;bottom:48px;background:var(--bg);border:1px solid rgba(255,255,255,.14);color:var(--ink);font-family:var(--hand);font-size:16px;line-height:24px;padding:var(--s2) var(--s3);border-radius:8px;transform:rotate(-4deg)}
+.sheet-tag b{color:var(--lime);font-weight:400}
+
+/* contador */
+.timer{margin-top:var(--s6);display:inline-flex;flex-direction:column;gap:var(--s2)}
+.timer-label{font-family:var(--hand);font-size:16px;line-height:24px;color:var(--muted)}
+.timer-label b{color:var(--ink);font-weight:400}
+.timer-boxes{display:flex;gap:var(--s2)}
+.tbox{min-width:64px;padding:var(--s2) var(--s2);text-align:center;background:var(--bg2);border:1px solid rgba(255,255,255,.1);border-radius:8px}
+.tbox b{display:block;font-size:30px;line-height:36px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink)}
+.tbox small{display:block;font-size:12px;line-height:16px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.timer.compact .tbox{min-width:56px}
+.timer.compact .tbox b{font-size:24px;line-height:32px}
+
+@media (min-width:900px){
+  .hero{padding:var(--s11) 0}
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:var(--s9)}
+  .hero h1{font-size:72px;line-height:1}
+  .hero .sub{font-size:20px;line-height:28px}
+}
+@media (min-width:600px) and (max-width:899px){ .hero h1{font-size:60px;line-height:1} }
+
+/* ========== Vídeo ========== */
+.video-sec{padding-top:0}
+.video-frame{position:relative;max-width:880px;margin:0 auto;border-radius:16px;padding:var(--s2);background:var(--bg2);border:1px solid rgba(255,255,255,.08)}
+.yt{position:relative;display:block;width:100%;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000 center/cover no-repeat;border:0;cursor:pointer}
+.yt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease),opacity .3s var(--ease);opacity:.86}
+.yt:hover img{transform:scale(1.03);opacity:1}
+.yt .play{position:absolute;left:50%;top:50%;width:80px;height:80px;margin:-40px 0 0 -40px;border-radius:50%;background:var(--lime);display:grid;place-items:center;transition:transform .5s var(--ease);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.yt:hover .play{transform:scale(1.08)}
+.yt .play svg{width:32px;height:32px;margin-left:4px;color:var(--lime-ink)}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-cap{display:flex;justify-content:center;align-items:center;gap:var(--s2);margin-top:var(--s4);font-family:var(--hand);color:var(--muted);font-size:16px;line-height:24px}
+.video-cap svg{width:40px;height:24px;color:var(--neon)}
+
+/* ========== Faixa corrida ========== */
+.ticker{padding:var(--s4) 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);overflow:hidden;background:var(--bg)}
+.ticker-in{display:flex;gap:var(--s6);width:max-content;animation:tick 38s linear infinite}
+.ticker span{font-family:var(--hand);font-size:20px;line-height:28px;color:var(--ink);white-space:nowrap;display:inline-flex;align-items:center;gap:var(--s6)}
+.ticker span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--lime)}
+.ticker span:nth-child(3n)::after{background:var(--neon)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ========== Títulos de seção ========== */
+.kicker{font-family:var(--hand);font-size:20px;line-height:28px;color:var(--lime);display:inline-flex;align-items:center;gap:var(--s2)}
+.kicker::before{content:"";width:24px;height:2px;background:currentColor;border-radius:2px}
+.kicker.neon{color:var(--neon)}
+.h2{margin-top:var(--s3);font-size:30px;line-height:36px;max-width:720px}
+.lead{margin-top:var(--s4);color:var(--muted);font-size:18px;line-height:28px;max-width:640px}
+@media (min-width:900px){ .h2{font-size:48px;line-height:1} section{padding:var(--s11) 0} }
+
+/* ========== Para quem é ========== */
+.who{display:grid;gap:var(--s8);margin-top:var(--s7)}
+.notebook{position:relative;background:var(--paper);color:var(--paper-ink);border-radius:8px;padding:var(--s6) var(--s5) var(--s6) var(--s8);box-shadow:0 30px 60px -24px rgba(0,0,0,.7);
+  background-image:repeating-linear-gradient(to bottom,transparent 0 39px,rgba(74,106,138,.22) 39px 40px);background-position:0 20px}
+.notebook::before{content:"";position:absolute;left:var(--s6);top:0;bottom:0;width:1px;background:rgba(255,106,31,.5)}
+.notebook::after{content:"";position:absolute;left:10px;top:var(--s5);bottom:var(--s5);width:12px;background:radial-gradient(circle,var(--bg) 4px,transparent 5px) 0 0/12px 40px repeat-y}
+.checks{list-style:none;display:grid;gap:0}
+.checks li{display:flex;gap:var(--s3);align-items:flex-start;font-size:16px;line-height:24px;padding:var(--s2) 0;min-height:40px}
+.checks li svg{flex:none;width:24px;height:24px;margin-top:0;color:#5E7F00}
+.checks li svg path{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .6s var(--ease)}
+.checks.on li svg path{stroke-dashoffset:0}
+.checks.on li:nth-child(2) svg path{transition-delay:.15s}.checks.on li:nth-child(3) svg path{transition-delay:.3s}.checks.on li:nth-child(4) svg path{transition-delay:.45s}.checks.on li:nth-child(5) svg path{transition-delay:.6s}
+.notebook .hand-foot{margin-top:var(--s3);font-family:var(--hand);font-size:18px;line-height:28px;color:#B8430A}
+@media (min-width:900px){ .who{grid-template-columns:.9fr 1.1fr;align-items:center} }
+
+/* ========== Caminho (3 passos) ========== */
+.steps{margin-top:var(--s8);display:grid;gap:var(--s5);counter-reset:s}
+.step{position:relative;padding:var(--s5);border-radius:16px;background:var(--bg2);border:1px solid rgba(255,255,255,.08)}
+.step .n{font-family:var(--hand);font-size:48px;line-height:1;color:var(--lime)}
+.step:nth-child(2) .n{color:var(--neon)}
+.step h3{margin-top:var(--s3);font-size:24px;line-height:32px}
+.step h3 small{display:block;font-size:14px;line-height:20px;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:var(--s1)}
+.step p{margin-top:var(--s3);color:#CFCFCA}
+.step .arrow{display:none}
+@media (min-width:900px){
+  .steps{grid-template-columns:repeat(3,1fr);gap:var(--s7)}
+  .step .arrow{display:block;position:absolute;right:-44px;top:40px;width:48px;height:32px;color:var(--muted);z-index:2}
+  .step:last-child .arrow{display:none}
+}
+
+/* ========== Frase grande ========== */
+.tagline{padding:var(--s11) 0}
+.tagline p{font-size:36px;line-height:40px;font-weight:700;letter-spacing:-0.02em;max-width:880px;text-wrap:balance}
+.tagline .w{color:rgba(242,241,236,.28);transition:color .6s var(--ease)}
+.tagline .w.on{color:var(--ink)}
+.tagline .w.lime.on{color:var(--lime)}
+.tagline .sig{margin-top:var(--s5);font-family:var(--hand);font-size:20px;line-height:28px;color:var(--muted)}
+@media (min-width:900px){ .tagline p{font-size:60px;line-height:1} }
+
+/* ========== Cursos ========== */
+.courses{margin-top:var(--s8);display:grid;gap:var(--s8)}
+.course{position:relative;background:var(--paper) var(--grid-paper);color:var(--paper-ink);border-radius:8px;padding:var(--s3) var(--s3) var(--s5);box-shadow:0 30px 60px -24px rgba(0,0,0,.7)}
+.course:nth-child(1){transform:rotate(-1deg)}.course:nth-child(2){transform:rotate(.8deg)}.course:nth-child(3){transform:rotate(-.6deg)}
+.course .media{position:relative;border-radius:2px;overflow:hidden;background:#DCD8CE}
+.course .media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.course .num{position:absolute;left:var(--s3);top:var(--s3);font-family:var(--hand);font-size:16px;line-height:24px;background:var(--paper);color:var(--paper-ink);border-radius:4px;padding:0 var(--s2)}
+.course .body{padding:var(--s4) var(--s2) 0}
+.course h3{font-size:24px;line-height:32px}
+.course .from{margin-top:var(--s1);font-size:14px;line-height:20px;color:var(--paper-muted)}
+.course .from s{white-space:nowrap}
+.course .desc{margin-top:var(--s3);font-size:16px;line-height:24px}
+.course ul{list-style:none;margin-top:var(--s4);display:grid;gap:var(--s2)}
+.course li{display:flex;gap:var(--s2);font-size:14px;line-height:20px}
+.course li svg{flex:none;width:20px;height:20px;color:#5E7F00}
+.course .tbd{margin-top:var(--s4);padding-top:var(--s3);border-top:1px dashed rgba(0,0,0,.18);font-size:14px;line-height:20px;color:var(--paper-muted)}
+@media (min-width:900px){ .courses{grid-template-columns:repeat(3,1fr);gap:var(--s6)} }
+.cta-row{margin-top:var(--s8);display:flex;flex-direction:column;align-items:center;text-align:center}
+.cta-row .cta-note{justify-content:center}
+
+/* ========== Resultados ========== */
+.results{margin-top:var(--s8);display:grid;grid-template-columns:1fr 1fr;gap:var(--s5) var(--s4);align-items:start}
+.polaroid{background:var(--paper);padding:var(--s2) var(--s2) var(--s3);border-radius:4px;position:relative;box-shadow:0 20px 40px -20px rgba(0,0,0,.7)}
+.polaroid:nth-child(odd){transform:rotate(-1.5deg)}.polaroid:nth-child(even){transform:rotate(1.2deg)}
+.polaroid img{width:100%;border-radius:2px;background:#DCD8CE}
+.polaroid .tape{width:64px;height:20px;margin-left:-32px;top:-10px}
+@media (min-width:900px){ .results{grid-template-columns:repeat(4,1fr);gap:var(--s6)} }
+.testis{margin-top:var(--s5);display:grid;gap:var(--s4)}
+.testi{border:1px dashed rgba(255,255,255,.24);border-radius:16px;padding:var(--s5);min-height:144px;display:flex;flex-direction:column;justify-content:space-between;gap:var(--s4)}
+.testi p{color:var(--muted);font-family:var(--hand);font-size:18px;line-height:28px}
+.testi .who-t{display:flex;align-items:center;gap:var(--s3);font-size:14px;line-height:20px;color:var(--dim)}
+.testi .who-t i{width:40px;height:40px;border-radius:50%;border:1px dashed rgba(255,255,255,.24);display:block}
+@media (min-width:900px){ .testis{grid-template-columns:repeat(3,1fr);gap:var(--s5)} }
+
+/* ========== Oferta ========== */
+.offer{display:grid;gap:var(--s8);align-items:start;margin-top:var(--s8)}
+.offer-card{position:relative;background:var(--bg2);border:1px solid rgba(200,240,49,.35);border-radius:24px;padding:var(--s6) var(--s5);box-shadow:0 0 0 6px rgba(200,240,49,.06),0 40px 80px -30px rgba(0,0,0,.8)}
+.offer-card .ribbon{position:absolute;top:-14px;left:var(--s5);background:var(--neon);color:#1A0A00;font-size:12px;line-height:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:var(--s1) var(--s3)}
+.offer-card h3{font-size:24px;line-height:32px}
+.stack{list-style:none;margin-top:var(--s5);display:grid;gap:0}
+.stack li{display:flex;justify-content:space-between;gap:var(--s4);padding:var(--s3) 0;border-bottom:1px dashed rgba(255,255,255,.14);font-size:16px;line-height:24px}
+.stack li span:last-child{color:var(--muted);white-space:nowrap}
+.stack li.total span{font-weight:600;color:var(--ink)}
+.stack li.total s{color:var(--muted);font-weight:400}
+.price-block{position:relative;margin-top:var(--s5);display:flex;align-items:flex-end;gap:var(--s4) var(--s6);flex-wrap:wrap}
+.price{position:relative;display:inline-flex;align-items:flex-start;font-weight:700;letter-spacing:-0.04em;color:var(--ink);font-variant-numeric:tabular-nums}
+.price .cur{font-size:30px;line-height:36px;margin-top:var(--s3);margin-right:var(--s1);letter-spacing:0}
+.price .val{font-size:96px;line-height:1}
+.price .circle{position:absolute;left:-18px;right:-22px;top:-12px;bottom:-14px;width:calc(100% + 40px);height:calc(100% + 26px);color:var(--lime);overflow:visible;pointer-events:none}
+.price-side{display:flex;flex-direction:column;gap:var(--s1);padding-bottom:var(--s3)}
+.price-side .from{color:var(--muted);font-size:14px;line-height:20px}
+.price-side .from s{white-space:nowrap}
+.price-side .inst{font-size:16px;line-height:24px;color:var(--ink);font-weight:600}
+.cota{margin-top:var(--s5);color:var(--neon)}
+.cota svg{display:block;width:100%;height:20px}
+.cota p{text-align:center;font-family:var(--hand);font-size:20px;line-height:28px;margin-top:var(--s1)}
+.cota p b{font-weight:400;white-space:nowrap}
+.compare{margin-top:var(--s5);display:grid;grid-template-columns:1fr 1fr;gap:var(--s2)}
+.compare div{border-radius:12px;padding:var(--s3);background:var(--bg3);font-size:14px;line-height:20px;color:var(--muted)}
+.compare div b{display:block;font-size:20px;line-height:28px;color:var(--ink);white-space:nowrap;margin-top:var(--s1)}
+.compare div.win{background:rgba(200,240,49,.12);color:var(--lime);outline:1px solid rgba(200,240,49,.4)}
+.compare div.win b{color:var(--lime)}
+.compare div:not(.win) b{text-decoration:line-through;text-decoration-color:var(--neon);text-decoration-thickness:2px}
+.incl{list-style:none;margin-top:var(--s5);display:grid;gap:var(--s2)}
+.incl li{display:flex;gap:var(--s2);font-size:16px;line-height:24px}
+.incl svg{flex:none;width:24px;height:24px;color:var(--lime)}
+.offer-card .btn{width:100%;margin-top:var(--s6)}
+.guarantee{margin-top:var(--s5);display:flex;gap:var(--s4);align-items:center}
+.seal{flex:none;width:88px;height:88px;color:var(--lime);transform:rotate(-8deg)}
+.seal text{font-family:var(--hand);fill:currentColor}
+.guarantee p{font-size:14px;line-height:20px;color:var(--muted)}
+.guarantee p b{color:var(--ink);font-weight:600}
+.secure{margin-top:var(--s4);display:flex;align-items:center;justify-content:center;gap:var(--s2);font-size:12px;line-height:16px;color:var(--dim)}
+.secure svg{width:16px;height:16px}
+.offer-card .timer{margin-top:var(--s5);width:100%;align-items:center}
+.why{padding:var(--s5);border-radius:16px;border:1px solid rgba(255,255,255,.1)}
+.why h3{font-size:24px;line-height:32px}
+.why p{margin-top:var(--s3);color:#CFCFCA}
+.why p + p{margin-top:var(--s3)}
+.why .hand-big{font-family:var(--hand);font-size:24px;line-height:32px;color:var(--neon);margin-top:var(--s5)}
+@media (min-width:900px){ .offer{grid-template-columns:1.05fr .95fr;gap:var(--s9)} .offer-card{padding:var(--s7)} .why{padding:var(--s7);margin-top:var(--s8)} }
+
+/* ========== Encerrada ========== */
+.closed-msg{display:none}
+body.encerrado .closed-msg{display:block}
+body.encerrado .so-aberta{display:none !important}
+.closed-msg .box{border:1px dashed var(--neon);border-radius:16px;padding:var(--s5);background:rgba(255,106,31,.08)}
+.closed-msg h3{font-size:24px;line-height:32px;color:var(--neon)}
+.closed-msg p{margin-top:var(--s2);color:#CFCFCA}
+.closed-msg .btn{margin-top:var(--s4)}
+.closed-inline{display:none;font-family:var(--hand);font-size:20px;line-height:28px;color:var(--neon)}
+body.encerrado .closed-inline{display:block}
+
+/* ========== Ana ========== */
+.ana{display:grid;gap:var(--s8);align-items:center;margin-top:var(--s7)}
+.ana-art{position:relative;max-width:420px;justify-self:center;width:100%}
+.ana-art .sheet{transform:rotate(-2deg)}
+.ana-art .sheet img{aspect-ratio:1/1}
+.ana-photo{position:absolute;right:-8px;bottom:-24px;width:132px;height:156px;background:var(--bg3);border:1px dashed var(--neon);border-radius:8px;display:grid;place-items:center;text-align:center;padding:var(--s2);transform:rotate(4deg);font-size:12px;line-height:16px;color:var(--neon);font-weight:600}
+.ana-txt p{margin-top:var(--s4);color:#CFCFCA;font-size:18px;line-height:28px}
+.ana-txt .quote{font-family:var(--hand);color:var(--ink);font-size:24px;line-height:32px}
+.ana-links{margin-top:var(--s5);display:flex;gap:var(--s3);flex-wrap:wrap}
+.ana-links .btn{font-size:14px;line-height:20px}
+@media (min-width:900px){ .ana{grid-template-columns:.85fr 1.15fr;gap:var(--s9)} }
+
+/* ========== FAQ ========== */
+.faq{margin-top:var(--s7);max-width:800px;display:grid;gap:var(--s2)}
+.faq details{border-radius:12px;background:var(--bg2);border:1px solid rgba(255,255,255,.08);transition:background-color .3s var(--ease)}
+.faq details[open]{background:var(--bg3)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:var(--s4);align-items:center;padding:var(--s4) var(--s5);font-weight:600;font-size:16px;line-height:24px;border-radius:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:24px;height:24px;position:relative;transition:transform .5s var(--ease)}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:4px;right:4px;top:11px;height:2px;background:var(--lime);border-radius:2px}
+.faq summary i::after{transform:rotate(90deg);transition:transform .5s var(--ease)}
+.faq details[open] summary i::after{transform:rotate(0)}
+.faq .ans{padding:0 var(--s5) var(--s5);color:#CFCFCA}
+.faq .ans p + p{margin-top:var(--s2)}
+.faq-help{margin-top:var(--s5);display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap;color:var(--muted)}
+
+/* ========== Avulsos ========== */
+.single{padding:var(--s9) 0}
+.single-box{max-width:800px;border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:var(--s5)}
+.single-box h2{font-size:24px;line-height:32px}
+.single-box > p{margin-top:var(--s2);color:var(--muted);font-size:14px;line-height:20px}
+.single-list{list-style:none;margin-top:var(--s4)}
+.single-list li{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);padding:var(--s3) 0;border-top:1px dashed rgba(255,255,255,.12)}
+.single-list .nm{font-size:16px;line-height:24px;font-weight:600}
+.single-list .nm small{display:block;font-weight:400;font-size:14px;line-height:20px;color:var(--muted)}
+.single-list .nm small s{white-space:nowrap}
+.single-list .buy{display:flex;align-items:center;gap:var(--s3);flex:none}
+.single-list .buy b{font-size:16px;line-height:24px;white-space:nowrap}
+.single-list .buy a{font-size:14px;line-height:20px;font-weight:600;color:var(--ink);text-decoration:none;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:var(--s1) var(--s3);transition:background-color .3s var(--ease),transform .5s var(--ease);white-space:nowrap}
+.single-list .buy a:hover{background:rgba(255,255,255,.08);transform:translateY(-1px)}
+@media (max-width:520px){ .single-list li{flex-direction:column;align-items:flex-start} }
+
+/* ========== Final ========== */
+.final{text-align:center;padding:var(--s11) 0 var(--s10);overflow:hidden}
+.final h2{font-size:36px;line-height:40px;max-width:680px;margin:var(--s3) auto 0}
+.final .lead{margin-left:auto;margin-right:auto}
+.final .btn{margin-top:var(--s6)}
+.final .timer{align-items:center}
+.final .cta-note{justify-content:center}
+@media (min-width:900px){ .final h2{font-size:60px;line-height:1} }
+
+footer{border-top:1px solid rgba(255,255,255,.08);padding:var(--s7) 0 calc(var(--s11) + var(--s6));font-size:14px;line-height:20px;color:var(--muted)}
+.foot{display:grid;gap:var(--s5)}
+.foot a{color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2)}
+.foot a:hover{border-color:var(--lime)}
+.foot .sup{display:flex;flex-wrap:wrap;gap:var(--s3) var(--s5)}
+@media (min-width:900px){ .foot{grid-template-columns:1fr auto;align-items:center} footer{padding-bottom:var(--s7)} }
+
+/* ========== Barra fixa mobile ========== */
+.sticky{position:fixed;left:var(--s2);right:var(--s2);bottom:calc(var(--s2) + env(safe-area-inset-bottom));z-index:55;display:flex;align-items:center;justify-content:space-between;gap:var(--s3);padding:var(--s2) var(--s2) var(--s2) var(--s4);border-radius:999px;background:rgba(31,31,31,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);box-shadow:0 20px 40px -10px rgba(0,0,0,.6);transform:translateY(160%);transition:transform .5s var(--ease)}
+.sticky.show{transform:none}
+.sticky .sp{display:flex;flex-direction:column;line-height:1}
+.sticky .sp small{font-size:12px;line-height:16px;color:var(--muted);white-space:nowrap}
+.sticky .sp b{font-size:24px;line-height:32px;font-weight:700;white-space:nowrap}
+.sticky .btn{flex:none;font-size:16px;line-height:24px}
+@media (min-width:900px){ .sticky{display:none} }
+body.encerrado .sticky{display:none}
+
+/* imagem ausente: hachura de croqui */
+.noimg{background:repeating-linear-gradient(45deg,#d9d4c8 0 2px,#ebe7dd 2px 10px) !important;min-height:180px}
+.noimg img{opacity:0}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms !important;animation:none !important}
+  .rv{transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="proto" role="note">Protótipo — não divulgar</div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#topo" aria-label="Ana Baronceli, início"><b>Ana Baronceli</b><small>Ilustra Black</small></a>
+    <a class="btn so-aberta" href="#oferta">Quero os 3 cursos</a>
+  </div>
+</header>
+
+<!-- Trilho: o lápis (e depois os marcadores) acompanha a leitura -->
+<div class="rail" aria-hidden="true">
+  <div class="rail-track"></div>
+  <div class="rail-line"></div>
+  <div class="rail-tool">
+    <svg data-tool="lapis" class="show" viewBox="0 0 24 120" fill="none">
+      <rect x="6" y="2" width="12" height="12" rx="2" fill="#FF8FA3"/>
+      <rect x="6" y="13" width="12" height="7" fill="#BDBDB8"/><path d="M6 15.5h12M6 18h12" stroke="#8E8E8A" stroke-width=".8"/>
+      <rect x="6" y="20" width="12" height="72" fill="#C8F031"/><path d="M10 20v72M14 20v72" stroke="#9FC21F" stroke-width=".8"/>
+      <path d="M6 92h12l-6 22z" fill="#E9D7B5"/><path d="M10.4 106h3.2L12 114z" fill="#3B3B38"/>
+    </svg>
+    <svg data-tool="lima" viewBox="0 0 24 120" fill="none">
+      <rect x="5" y="2" width="14" height="30" rx="4" fill="#C8F031"/>
+      <rect x="5" y="30" width="14" height="66" rx="2" fill="#2A2A2A" stroke="#4A4A4A"/>
+      <rect x="5" y="54" width="14" height="10" fill="#C8F031"/>
+      <path d="M7 96h10v8H7z" fill="#3A3A3A"/><path d="M8.5 104h7l-1.6 12h-5z" fill="#C8F031"/>
+    </svg>
+    <svg data-tool="laranja" viewBox="0 0 24 120" fill="none">
+      <rect x="5" y="2" width="14" height="30" rx="4" fill="#FF6A1F"/>
+      <rect x="5" y="30" width="14" height="66" rx="2" fill="#2A2A2A" stroke="#4A4A4A"/>
+      <rect x="5" y="54" width="14" height="10" fill="#FF6A1F"/>
+      <path d="M7 96h10v8H7z" fill="#3A3A3A"/><path d="M8.5 104h7l-1.6 12h-5z" fill="#FF6A1F"/>
+    </svg>
+  </div>
+  <div class="rail-label"></div>
+</div>
+
+<main id="conteudo">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="topo" data-tool="lapis" data-label="esboço">
+  <svg class="hero-persp sk" id="persp" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <!-- perspectiva de 1 ponto: um ambiente interno -->
+    <line pathLength="1" x1="0" y1="430" x2="1200" y2="430"/>
+    <line pathLength="1" x1="760" y1="430" x2="0" y2="0"/>
+    <line pathLength="1" x1="760" y1="430" x2="1200" y2="0"/>
+    <line pathLength="1" x1="760" y1="430" x2="0" y2="800"/>
+    <line pathLength="1" x1="760" y1="430" x2="1200" y2="800"/>
+    <path pathLength="1" d="M560 300h330v250H560z"/>
+    <line pathLength="1" x1="760" y1="430" x2="160" y2="700"/>
+    <line pathLength="1" x1="760" y1="430" x2="420" y2="800"/>
+    <line pathLength="1" x1="760" y1="430" x2="1050" y2="800"/>
+    <circle pathLength="1" cx="760" cy="430" r="6"/>
+  </svg>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="tag">Ilustra Black 2026</span><span>85% OFF</span><span>·</span><span>Acesso vitalício</span></div>
+      <h1>Tire suas ideias<br><span class="hl">do papel</span></h1>
+      <p class="sub">Perspectiva, pintura com marcadores e IA em <strong>3 cursos completos</strong> para estudantes e profissionais de arquitetura e design. De <s class="nowrap">R$741</s> por <strong class="nowrap">R$97</strong>.</p>
+      <div class="hero-cta">
+        <a class="btn btn-lg so-aberta js-combo" href="https://pay.hotmart.com/R108496812H?off=shtxfs5m&amp;checkoutMode=10">Quero os 3 cursos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        <p class="closed-inline">A Ilustra Black 2026 foi encerrada.</p>
+        <div class="cta-note so-aberta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/></svg>Garantia de 7 dias</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l3 6 4-12 3 6h2"/></svg>Ou parcelado no cartão</span>
+        </div>
+      </div>
+      <div class="timer so-aberta" data-timer>
+        <span class="timer-label">A Ilustra Black termina em <b data-deadline-text></b></span>
+        <div class="timer-boxes" role="timer" aria-live="off">
+          <div class="tbox"><b data-d>00</b><small>dias</small></div>
+          <div class="tbox"><b data-h>00</b><small>horas</small></div>
+          <div class="tbox"><b data-m>00</b><small>min</small></div>
+          <div class="tbox"><b data-s>00</b><small>seg</small></div>
+        </div>
+      </div>
+      <p class="note-hand">
+        <svg class="sk" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path pathLength="1" d="M4 6c10 2 22 10 30 24"/><path pathLength="1" d="M26 28l8 4 2-9"/></svg>
+        Você não precisa de dom, só do direcionamento certo.
+      </p>
+    </div>
+    <div class="sheet-wrap rv">
+      <figure class="sheet">
+        <span class="tape"></span>
+        <img src="img/hero.jpg" alt="Croqui de arquitetura pintado, da Ana Baronceli" width="900" height="1125" fetchpriority="high" onerror="this.parentNode.classList.add('noimg')">
+        <figcaption><span>do papel</span><span>→ cor → imagem</span></figcaption>
+      </figure>
+      <div class="sheet-tag">3 cursos por <b class="nowrap">R$97</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VÍDEO ================= -->
+<section class="video-sec" data-tool="lapis" data-label="assista">
+  <div class="wrap">
+    <div class="video-frame rv">
+      <!-- Vídeo de vendas da página atual (YouTube KIyU7-NWHYI). Só carrega o YouTube depois do clique. -->
+      <button class="yt" type="button" data-yt="KIyU7-NWHYI" aria-label="Assistir ao vídeo da Ana">
+        <img src="img/yt.jpg" alt="" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/KIyU7-NWHYI/hqdefault.jpg'">
+        <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.4-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span>
+      </button>
+    </div>
+    <p class="video-cap"><svg class="sk" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path pathLength="1" d="M2 18c10-12 22-14 34-8"/><path pathLength="1" d="M30 4l6 6-8 3"/></svg>Dá o play: a Ana mostra o combo</p>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-in">
+    <span>Perspectiva sem Mistério</span><span>Pintura com Marcadores</span><span>Do Papel à Imagem com IA</span><span>Acesso vitalício</span><span>Interiores e exteriores</span><span>Garantia de 7 dias</span>
+    <span>Perspectiva sem Mistério</span><span>Pintura com Marcadores</span><span>Do Papel à Imagem com IA</span><span>Acesso vitalício</span><span>Interiores e exteriores</span><span>Garantia de 7 dias</span>
+  </div>
+</div>
+
+<!-- ================= PARA QUEM É ================= -->
+<section id="para-quem" data-tool="lapis" data-label="para quem">
+  <div class="wrap who">
+    <div class="rv">
+      <span class="kicker">Para quem é</span>
+      <h2 class="h2">Feito para quem desenha arquitetura, ou quer <span class="hl thin">começar agora</span></h2>
+      <p class="lead">Estudantes e profissionais de arquitetura e design que querem colocar a ideia no papel com segurança, dar cor rápido e apresentar com imagem profissional.</p>
+    </div>
+    <div class="notebook rv">
+      <ul class="checks" data-checks>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M4 13l5 5L20 6"/></svg>Você trava quando precisa fazer um croqui em perspectiva</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M4 13l5 5L20 6"/></svg>Quer desenhar interiores e exteriores à mão, sem complicar</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M4 13l5 5L20 6"/></svg>Quer aprender a pintar com marcadores, o material dos arquitetos</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M4 13l5 5L20 6"/></svg>Quer transformar croquis em imagens e vídeos com IA, só com o celular</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M4 13l5 5L20 6"/></svg>Acha que não nasceu com dom para desenhar</li>
+      </ul>
+      <p class="hand-foot">Marcou pelo menos um? Continua aqui comigo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAMINHO ================= -->
+<section id="caminho" data-tool="lapis" data-label="o caminho">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kicker neon">O caminho, em 3 cursos</span>
+      <h2 class="h2">Do primeiro traço à <span class="hl">imagem pronta</span></h2>
+    </div>
+    <div class="steps">
+      <article class="step rv">
+        <div class="n">01</div>
+        <h3>Desenhe<small>Perspectiva sem Mistério</small></h3>
+        <p>Perspectiva do zero, de um jeito simples, para croquis de interiores e exteriores feitos à mão.</p>
+        <svg class="arrow sk" viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path pathLength="1" d="M2 20c12-14 26-14 40-4"/><path pathLength="1" d="M36 8l6 8-9 3"/></svg>
+      </article>
+      <article class="step rv">
+        <div class="n">02</div>
+        <h3>Pinte<small>Pintura com Marcadores</small></h3>
+        <p>O material oficial dos arquitetos para colorir seus croquis de forma rápida e expressiva.</p>
+        <svg class="arrow sk" viewBox="0 0 48 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path pathLength="1" d="M2 20c12-14 26-14 40-4"/><path pathLength="1" d="M36 8l6 8-9 3"/></svg>
+      </article>
+      <article class="step rv">
+        <div class="n">03</div>
+        <h3>Apresente<small>Do Papel à Imagem com IA</small></h3>
+        <p>Transforme seus croquis em imagens e vídeos profissionais com inteligência artificial, usando só o celular.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FRASE GRANDE ================= -->
+<section class="tagline" data-tool="lapis" data-label="anota aí">
+  <div class="wrap">
+    <p data-words>Você não precisa de dom. Só do <span data-lime>direcionamento</span> <span data-lime>certo.</span></p>
+    <p class="sig">— Ana Baronceli</p>
+  </div>
+</section>
+
+<!-- ================= CURSOS ================= -->
+<section id="cursos" data-tool="lima" data-label="os cursos">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kicker">O que tem em cada curso</span>
+      <h2 class="h2">3 cursos completos, gravados, com <span class="hl">acesso vitalício</span></h2>
+      <p class="lead">As aulas ficam na área de membros da Hotmart e o acesso é liberado logo depois da compra.</p>
+    </div>
+    <div class="courses">
+      <article class="course rv">
+        <span class="tape beige"></span>
+        <div class="media"><img src="img/curso-perspectiva.jpg" alt="Croqui em perspectiva, curso Perspectiva sem Mistério" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 01</span></div>
+        <div class="body">
+          <h3>Perspectiva sem Mistério</h3>
+          <p class="from">Valor normal: <s>R$147</s></p>
+          <p class="desc">Aprenda a fazer croquis em perspectiva do zero, de forma simples.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Interiores e exteriores</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Croquis feitos à mão, com materiais que você já tem</li>
+          </ul>
+          <p class="tbd"><span data-placeholder>[PREENCHER COM A ANA: módulos, nº de aulas, carga horária]</span></p>
+        </div>
+      </article>
+      <article class="course rv">
+        <span class="tape"></span>
+        <div class="media"><img src="img/curso-pintura.jpg" alt="Croqui pintado com marcadores, curso Pintura com Marcadores" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 02</span></div>
+        <div class="body">
+          <h3>Pintura com Marcadores</h3>
+          <p class="from">Valor normal: <s>R$197</s></p>
+          <p class="desc">Aprenda a usar o material oficial dos arquitetos para colorir croquis de forma rápida.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Pintura rápida e expressiva</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Marcadores aplicados ao croqui de arquitetura</li>
+          </ul>
+          <p class="tbd"><span data-placeholder>[PREENCHER COM A ANA: módulos, nº de aulas, carga horária, marcadores usados]</span></p>
+        </div>
+      </article>
+      <article class="course rv">
+        <span class="tape neon"></span>
+        <div class="media"><img src="img/curso-ia.jpg" alt="Croqui transformado em imagem com IA, curso Do Papel à Imagem com IA" loading="lazy" width="800" height="600" onerror="this.parentNode.classList.add('noimg')"><span class="num">curso 03</span></div>
+        <div class="body">
+          <h3>Do Papel à Imagem com IA</h3>
+          <p class="from">Valor normal: <s>R$397</s></p>
+          <p class="desc">Transforme seus croquis em imagens e vídeos realistas com inteligência artificial.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Imagens e vídeos profissionais a partir do croqui</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Usando só o celular</li>
+          </ul>
+          <p class="tbd"><span data-placeholder>[PREENCHER COM A ANA: módulos, nº de aulas, ferramentas de IA usadas e se são pagas]</span></p>
+        </div>
+      </article>
+    </div>
+    <div class="cta-row rv">
+      <a class="btn btn-lg so-aberta js-combo" href="https://pay.hotmart.com/R108496812H?off=shtxfs5m&amp;checkoutMode=10">Quero os 3 cursos por <span class="nowrap">R$97</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <p class="closed-inline">A Ilustra Black 2026 foi encerrada.</p>
+      <div class="cta-note so-aberta"><span>Acesso vitalício</span><span>·</span><span>Garantia de 7 dias</span><span>·</span><span>Ou parcelado no cartão</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTADOS ================= -->
+<section id="resultados" data-tool="laranja" data-label="resultados">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kicker neon">Resultados de alunas</span>
+      <h2 class="h2">Gente que achava que <span class="hl neon">não sabia desenhar</span></h2>
+      <p class="lead">Trabalhos de alunas que a Ana já mostra na página dela.</p>
+    </div>
+    <div class="results">
+      <figure class="polaroid rv"><span class="tape beige"></span><img src="img/aluna-1.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+      <figure class="polaroid rv"><span class="tape"></span><img src="img/aluna-2.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+      <figure class="polaroid rv"><span class="tape neon"></span><img src="img/aluna-3.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+      <figure class="polaroid rv"><span class="tape beige"></span><img src="img/aluna-4.jpg" alt="Resultado de aluna" loading="lazy" onerror="this.parentNode.classList.add('noimg')"></figure>
+    </div>
+    <div class="testis">
+      <div class="testi rv"><p>“[DEPOIMENTO REAL AQUI]”</p><div class="who-t"><i></i><span>Nome, cidade · curso</span></div></div>
+      <div class="testi rv"><p>“[DEPOIMENTO REAL AQUI]”</p><div class="who-t"><i></i><span>Nome, cidade · curso</span></div></div>
+      <div class="testi rv"><p>“[DEPOIMENTO REAL AQUI]”</p><div class="who-t"><i></i><span>Nome, cidade · curso</span></div></div>
+    </div>
+    <div class="cta-row rv">
+      <a class="btn btn-lg so-aberta js-combo" href="https://pay.hotmart.com/R108496812H?off=shtxfs5m&amp;checkoutMode=10">Quero os 3 cursos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      <p class="closed-inline">A Ilustra Black 2026 foi encerrada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFERTA ================= -->
+<section id="oferta" data-tool="lima" data-label="a oferta">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kicker">A oferta</span>
+      <h2 class="h2 so-aberta">Os 3 cursos por <span class="hl nowrap">R$97</span></h2><h2 class="h2 closed-msg">A Ilustra Black 2026 terminou</h2>
+    </div>
+    <div class="offer">
+      <div class="offer-card rv">
+        <span class="ribbon so-aberta">Ilustra Black 2026 · 85% OFF</span>
+        <div class="so-aberta">
+          <h3>Combo com 3 cursos completos</h3>
+          <ul class="stack">
+            <li><span>Perspectiva sem Mistério</span><span>R$147</span></li>
+            <li><span>Pintura com Marcadores</span><span>R$197</span></li>
+            <li><span>Do Papel à Imagem com IA</span><span>R$397</span></li>
+            <li class="total"><span>Valor normal</span><span><s>R$741</s></span></li>
+          </ul>
+          <div class="price-block">
+            <div class="price" aria-label="R$97">
+              <svg class="circle sk" viewBox="0 0 200 120" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path pathLength="1" d="M150 14C110 0 30 4 12 40c-16 34 30 70 100 66 60-4 90-30 80-58C186 26 160 12 120 10"/></svg>
+              <span class="cur">R$</span><span class="val">97</span>
+            </div>
+            <div class="price-side">
+              <span class="from">de <s>R$741</s> por</span>
+              <span class="inst">ou parcelado no cartão</span>
+            </div>
+          </div>
+          <div class="cota" aria-label="Economia de R$644">
+            <svg class="sk" viewBox="0 0 300 20" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.6"><line pathLength="1" x1="2" y1="10" x2="298" y2="10"/><line pathLength="1" x1="2" y1="2" x2="2" y2="18"/><line pathLength="1" x1="298" y1="2" x2="298" y2="18"/><polyline pathLength="1" points="12,5 2,10 12,15"/><polyline pathLength="1" points="288,5 298,10 288,15"/></svg>
+            <p>economia de <b>R$644</b></p>
+          </div>
+          <div class="compare">
+            <div>3 cursos avulsos<b>R$119,70</b></div>
+            <div class="win">No combo<b>R$97</b></div>
+          </div>
+          <ul class="incl">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>3 cursos completos: perspectiva, marcadores e IA</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Acesso vitalício, enquanto a Hotmart existir</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Aulas gravadas, com acesso imediato</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 13l5 5L20 6"/></svg>Suporte pelo WhatsApp e e-mail</li>
+          </ul>
+          <a class="btn btn-lg js-combo" href="https://pay.hotmart.com/R108496812H?off=shtxfs5m&amp;checkoutMode=10">Quero os 3 cursos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <div class="guarantee">
+            <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
+              <defs><path id="ring" d="M50 50m-36 0a36 36 0 1 1 72 0a36 36 0 1 1-72 0"/></defs>
+              <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 4"/>
+              <circle cx="50" cy="50" r="27" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <text font-size="9.5" letter-spacing="1.6"><textPath href="#ring">GARANTIA · 7 DIAS · GARANTIA · 7 DIAS ·</textPath></text>
+              <text x="50" y="54" text-anchor="middle" font-size="28">7</text><text x="50" y="67" text-anchor="middle" font-size="10" letter-spacing="1">DIAS</text>
+            </svg>
+            <p><b>Garantia de 7 dias.</b> Se não for para você, peça o reembolso direto na Hotmart em até 7 dias depois da compra.</p>
+          </div>
+          <div class="timer compact" data-timer>
+            <span class="timer-label">Termina em <b data-deadline-text></b></span>
+            <div class="timer-boxes">
+              <div class="tbox"><b data-d>00</b><small>dias</small></div>
+              <div class="tbox"><b data-h>00</b><small>horas</small></div>
+              <div class="tbox"><b data-m>00</b><small>min</small></div>
+              <div class="tbox"><b data-s>00</b><small>seg</small></div>
+            </div>
+          </div>
+          <p class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Pagamento seguro pela Hotmart</p>
+        </div>
+        <div class="closed-msg">
+          <div class="box">
+            <h3>Oferta encerrada</h3>
+            <p>A Ilustra Black 2026 terminou em <span data-deadline-text></span>. Quer saber das próximas condições? Fale com a equipe da Ana.</p>
+            <a class="btn" href="https://wa.me/5567996230759?text=Ol%C3%A1%2C%20vim%20da%20p%C3%A1gina%20da%20Ilustra%20Black">Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <aside class="why rv">
+        <span class="kicker neon">Por que tão barato?</span>
+        <h3 style="margin-top:12px">Porque é Black. E só acontece uma vez por ano.</h3>
+        <p>Os cursos não mudaram: são os mesmos, completos, com acesso vitalício. O que muda é o momento.</p>
+        <p>A Ilustra Black é a única época do ano em que a Ana junta os 3 cursos por esse valor. Fora dela, cada um volta ao valor normal: <span class="nowrap">R$147</span>, <span class="nowrap">R$197</span> e <span class="nowrap">R$397</span>.</p>
+        <p class="hand-big">Os 3 cursos por menos do que o valor normal do mais barato deles.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANA ================= -->
+<section id="ana" data-tool="lapis" data-label="quem ensina">
+  <div class="wrap ana">
+    <div class="ana-art rv">
+      <figure class="sheet">
+        <span class="tape neon"></span>
+        <img src="img/ana-trabalho.jpg" alt="Ilustração de arquitetura feita pela Ana Baronceli" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+        <figcaption><span>trabalho da Ana</span><span>portfólio</span></figcaption>
+      </figure>
+      <div class="ana-photo">[FOTO DA ANA AQUI]</div>
+    </div>
+    <div class="ana-txt rv">
+      <span class="kicker">Quem ensina</span>
+      <h2 class="h2">Ana Baronceli</h2>
+      <p class="quote">Arquiteta e artista, apaixonada por desenho desde sempre.</p>
+      <p>Trabalha profissionalmente com ilustração desde 2018, com workshops, cursos e atendimento a clientes nacionais e internacionais.</p>
+      <p>No dia a dia, faz perspectivas humanizadas, plantas humanizadas e sketches conceituais que conectam projetos e clientes de forma sensível e artística. É esse processo que ela ensina nos cursos.</p>
+      <div class="ana-links">
+        <a class="btn btn-ghost" href="https://www.instagram.com/anabaronceli_arq/" target="_blank" rel="noopener">@anabaronceli_arq</a>
+        <a class="btn btn-ghost" href="https://anabaronceli.com.br/portfolio" target="_blank" rel="noopener">Ver portfólio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" data-tool="lapis" data-label="dúvidas">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kicker">Dúvidas frequentes</span>
+      <h2 class="h2">Antes de você perguntar</h2>
+    </div>
+    <div class="faq rv">
+      <details><summary>Preciso saber desenhar?<i></i></summary><div class="ans"><p>Não. O Perspectiva sem Mistério começa do zero, e a proposta da Ana é justamente essa: você não precisa de dom, só do direcionamento certo.</p></div></details>
+      <details><summary>Que material eu preciso?<i></i></summary><div class="ans"><p>Para os croquis, materiais que você já tem. Para o curso de pintura, marcadores. Para o curso de IA, só o celular.</p><p><span data-placeholder>[CONFIRMAR COM A ANA: lista de material, marcas e quantidade mínima de marcadores]</span></p></div></details>
+      <details><summary>Funciona no celular?<i></i></summary><div class="ans"><p>Sim. O curso de IA foi pensado para ser feito só com o celular, e as aulas ficam na área de membros da Hotmart, que abre no navegador e no app.</p></div></details>
+      <details><summary>Por quanto tempo tenho acesso?<i></i></summary><div class="ans"><p>Acesso vitalício: enquanto a Hotmart existir, você pode rever as aulas quando quiser.</p></div></details>
+      <details><summary>Como recebo o acesso?<i></i></summary><div class="ans"><p>As aulas são gravadas e o acesso é imediato na área de membros da Hotmart. Depois da compra, você recebe os dados de acesso no e-mail que usou no pagamento.</p></div></details>
+      <details><summary>Posso comprar só um curso?<i></i></summary><div class="ans"><p>Pode. Se você já tem algum dos cursos, cada um sai por <span class="nowrap">R$39,90</span> na Ilustra Black. <a href="#avulsos">Veja os avulsos</a>. Para quem não tem nenhum, o combo com os 3 sai por <span class="nowrap">R$97</span>.</p></div></details>
+      <details><summary>Posso parcelar?<i></i></summary><div class="ans"><p>Sim, no cartão, direto no checkout da Hotmart.</p></div></details>
+      <details><summary>E se eu não gostar?<i></i></summary><div class="ans"><p>Você tem 7 dias para pedir o reembolso direto na Hotmart.</p></div></details>
+    </div>
+    <div class="faq-help rv">
+      <span>Ficou alguma dúvida?</span>
+      <a class="btn btn-ghost" href="https://wa.me/5567996230759?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20a%20Ilustra%20Black" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVULSOS ================= -->
+<section class="single" id="avulsos" data-tool="lapis" data-label="avulsos">
+  <div class="wrap">
+    <div class="single-box rv">
+      <h2>Já tem algum dos cursos?</h2>
+      <p>Complete o que falta por <span class="nowrap">R$39,90</span> cada. Se ainda não tem nenhum, o combo sai mais em conta.</p>
+      <ul class="single-list so-aberta">
+        <li><span class="nm">Perspectiva sem Mistério<small>de <s>R$147</s></small></span><span class="buy"><b>R$39,90</b><a href="https://pay.hotmart.com/C105853903G?off=cmq784qd&amp;checkoutMode=10">Comprar este</a></span></li>
+        <li><span class="nm">Pintura com Marcadores<small>de <s>R$197</s></small></span><span class="buy"><b>R$39,90</b><a href="https://pay.hotmart.com/S108494582I?off=sl0lsvel&amp;checkoutMode=10">Comprar este</a></span></li>
+        <li><span class="nm">Do Papel à Imagem com IA<small>de <s>R$397</s></small></span><span class="buy"><b>R$39,90</b><a href="https://pay.hotmart.com/I103936544A?off=qjmfzexk&amp;checkoutMode=10">Comprar este</a></span></li>
+      </ul>
+      <p class="closed-inline">Os avulsos da Ilustra Black 2026 foram encerrados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="final" data-tool="lima" data-label="sua vez">
+  <div class="wrap">
+    <span class="kicker">Sua vez</span>
+    <h2>Pega o lápis.<br>O resto a Ana <span class="hl">te mostra.</span></h2>
+    <p class="lead">Perspectiva, pintura com marcadores e IA. 3 cursos completos por <span class="nowrap">R$97</span>, com acesso vitalício e garantia de 7 dias.</p>
+    <a class="btn btn-lg so-aberta js-combo" href="https://pay.hotmart.com/R108496812H?off=shtxfs5m&amp;checkoutMode=10">Quero os 3 cursos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+    <div class="closed-msg" style="max-width:520px;margin:24px auto 0;text-align:left"><div class="box"><h3>Oferta encerrada</h3><p>A Ilustra Black 2026 terminou. Fale com a equipe da Ana para saber das próximas condições.</p><a class="btn" href="https://wa.me/5567996230759?text=Ol%C3%A1">Falar no WhatsApp</a></div></div>
+    <div><div class="timer compact so-aberta" data-timer>
+      <span class="timer-label">Termina em <b data-deadline-text></b></span>
+      <div class="timer-boxes">
+        <div class="tbox"><b data-d>00</b><small>dias</small></div>
+        <div class="tbox"><b data-h>00</b><small>horas</small></div>
+        <div class="tbox"><b data-m>00</b><small>min</small></div>
+        <div class="tbox"><b data-s>00</b><small>seg</small></div>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p class="hand" style="font-size:20px;line-height:28px;color:var(--ink)">Ana Baronceli</p>
+      <p>Copyright © Ana Baronceli <span data-year>2026</span> · Todos os direitos reservados</p>
+    </div>
+    <div class="sup">
+      <span>Suporte:</span>
+      <a href="https://wa.me/5567996230759?text=Ol%C3%A1" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:anabnegociosonline@gmail.com">anabnegociosonline@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <span class="sp"><small>3 cursos · de <s>R$741</s></small><b>R$97</b></span>
+  <a class="btn js-combo" href="https://pay.hotmart.com/R108496812H?off=shtxfs5m&amp;checkoutMode=10" tabindex="-1">Quero os 3 cursos</a>
+</div>
+
+<script>
+/* =====================================================================
+   PRAZO DA OFERTA — PLACEHOLDER! Confirmar data/hora com a Ana.
+   30/11/2026 às 20h00, horário de Brasília (UTC−3).
+   Para testar o estado encerrado: abra a página com ?simular=encerrado
+   ===================================================================== */
+var PRAZO = new Date("2026-11-30T20:00:00-03:00");
+
+(function(){
+  var q = new URLSearchParams(location.search);
+  if (q.get("simular") === "encerrado") PRAZO = new Date(Date.now() - 1000);
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- texto do prazo ---------- */
+  var fmt = new Intl.DateTimeFormat("pt-BR",{timeZone:"America/Sao_Paulo",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}).formatToParts(PRAZO);
+  var p = {}; fmt.forEach(function(x){p[x.type]=x.value});
+  var txt = p.day+"/"+p.month+" às "+p.hour+"h"+(p.minute!=="00"?p.minute:"")+" (Brasília)";
+  document.querySelectorAll("[data-deadline-text]").forEach(function(el){el.textContent = txt});
+
+  /* ---------- contador ---------- */
+  var timers = document.querySelectorAll("[data-timer]");
+  function pad(n){return (n<10?"0":"")+n}
+  function fechar(){
+    if (document.body.classList.contains("encerrado")) return;
+    document.body.classList.add("encerrado");
+    document.querySelectorAll(".js-combo").forEach(function(a){a.removeAttribute("href");a.setAttribute("aria-disabled","true")});
+    document.querySelectorAll(".single-list a").forEach(function(a){a.removeAttribute("href")});
+  }
+  function tick(){
+    var ms = PRAZO - Date.now();
+    if (ms <= 0){ fechar(); return false; }
+    var s = Math.floor(ms/1000), d = Math.floor(s/86400), h = Math.floor(s%86400/3600), m = Math.floor(s%3600/60), sec = s%60;
+    timers.forEach(function(t){
+      t.querySelector("[data-d]").textContent = pad(d);
+      t.querySelector("[data-h]").textContent = pad(h);
+      t.querySelector("[data-m]").textContent = pad(m);
+      t.querySelector("[data-s]").textContent = pad(sec);
+    });
+    return true;
+  }
+  if (tick()){ var iv = setInterval(function(){ if(!tick()) clearInterval(iv) },1000); }
+
+  /* ---------- palavras da frase grande ---------- */
+  document.querySelectorAll("[data-words]").forEach(function(el){
+    var out = [];
+    el.childNodes.forEach(function(n){
+      if (n.nodeType === 3){ n.textContent.split(/(\s+)/).forEach(function(w){ if(!w) return; out.push(/^\s+$/.test(w)? document.createTextNode(w) : mk(w,false)) }); }
+      else out.push(mk(n.textContent, n.hasAttribute("data-lime")));
+    });
+    el.textContent = ""; out.forEach(function(x){el.appendChild(x)});
+    function mk(w,l){var s=document.createElement("span");s.className="w"+(l?" lime":"");s.textContent=w;return s}
+  });
+
+  /* ---------- revelações (IntersectionObserver, uma vez só) ---------- */
+  if (reduce || !("IntersectionObserver" in window)){
+    document.querySelectorAll(".rv,.hl,.sk,[data-checks],.tagline .w").forEach(function(e){e.classList.add("on")});
+  } else {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("on"); io.unobserve(e.target);} }) },{rootMargin:"0px 0px -12% 0px",threshold:0.12});
+    document.querySelectorAll(".rv,.hl,.sk,[data-checks]").forEach(function(e){io.observe(e)});
+    var iw = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("on"); iw.unobserve(e.target);} }) },{rootMargin:"0px 0px -38% 0px",threshold:1});
+    document.querySelectorAll(".tagline .w").forEach(function(e){iw.observe(e)});
+  }
+
+  /* ---------- vídeo: só carrega o YouTube no clique ---------- */
+  document.querySelectorAll("[data-yt]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";
+      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen = true; f.title = "Vídeo da Ana Baronceli";
+      b.innerHTML = ""; b.appendChild(f); b.style.cursor = "default";
+    },{once:true});
+  });
+
+  /* ---------- trilho: lápis e marcadores acompanham a leitura ---------- */
+  var rail = document.querySelector(".rail"), line = rail.querySelector(".rail-line"), tool = rail.querySelector(".rail-tool"),
+      label = rail.querySelector(".rail-label"), svgs = tool.querySelectorAll("svg"),
+      secs = [].slice.call(document.querySelectorAll("main section[data-tool]")),
+      colors = {lapis:"#8C8C87", lima:"#C8F031", laranja:"#FF6A1F"}, cur = "", curLabel = "", lastP = 0, tilt = 0, ticking = false;
+  function paint(){
+    var max = document.documentElement.scrollHeight - innerHeight, stops = [], prev = null;
+    secs.forEach(function(s){
+      var r = Math.max(0, Math.min(1, (s.offsetTop - innerHeight*0.5) / max)), c = colors[s.dataset.tool];
+      if (prev) stops.push(prev+" "+(r*100).toFixed(2)+"%");
+      stops.push(c+" "+(r*100).toFixed(2)+"%"); prev = c;
+    });
+    stops.push(prev+" 100%");
+    line.style.background = "linear-gradient(to bottom,"+stops.join(",")+")";
+  }
+  function frame(){
+    ticking = false;
+    var max = document.documentElement.scrollHeight - innerHeight, pr = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0,
+        h = rail.clientHeight, th = tool.clientHeight;
+    var v = pr - lastP; lastP = pr; tilt += ((v*900) - tilt) * 0.3; tilt = Math.max(-10, Math.min(10, tilt));
+    line.style.transform = "scaleY("+pr+")";
+    tool.style.transform = "translateY("+(pr*h - th)+"px) rotate("+(8 + tilt).toFixed(2)+"deg)";
+    var mid = scrollY + innerHeight*0.5, active = secs[0];
+    secs.forEach(function(s){ if (s.offsetTop <= mid) active = s; });
+    if (active.dataset.tool !== cur){ cur = active.dataset.tool; svgs.forEach(function(sv){ sv.classList.toggle("show", sv.dataset.tool === cur) }); }
+    if (active.dataset.label !== curLabel){ curLabel = active.dataset.label; label.textContent = curLabel; }
+    label.style.transform = "translateY("+(pr*h - 28)+"px)";
+    if (Math.abs(tilt) > 0.2 && !ticking){ ticking = true; requestAnimationFrame(frame); }
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(frame); } }
+  addEventListener("scroll", onScroll, {passive:true});
+  addEventListener("resize", function(){ paint(); onScroll(); });
+  addEventListener("load", function(){ paint(); onScroll(); });
+  paint(); frame();
+
+  /* ---------- barra fixa no mobile ---------- */
+  var sticky = document.getElementById("sticky"), heroCta = document.querySelector(".hero .js-combo"), offerCard = document.querySelector(".offer-card");
+  if ("IntersectionObserver" in window){
+    var heroOut = false, offerIn = false;
+    var so = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.target === heroCta) heroOut = !e.isIntersecting && e.boundingClientRect.top < 0; if(e.target === offerCard) offerIn = e.isIntersecting; });
+      var on = heroOut && !offerIn; sticky.classList.toggle("show", on); sticky.setAttribute("aria-hidden", on ? "false" : "true");
+      sticky.querySelector("a").tabIndex = on ? 0 : -1;
+    });
+    so.observe(heroCta); so.observe(offerCard);
+  }
+  document.querySelectorAll("[data-year]").forEach(function(e){e.textContent = new Date().getFullYear()});
+})();
+</script>
+</body>
+</html>
