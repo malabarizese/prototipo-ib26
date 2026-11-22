@@ -1047,5 +1047,19 @@ var PRAZO = new Date("2026-11-30T20:00:00-03:00");
   document.querySelectorAll("[data-year]").forEach(function(e){e.textContent = new Date().getFullYear()});
 })();
 </script>
+<script>
+/* Repassa UTMs e demais parâmetros da URL para os links de checkout da Hotmart */
+(function(){
+  var q=new URLSearchParams(location.search); if(!q.toString()) return;
+  document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(function(a){
+    try{var u=new URL(a.href);
+      q.forEach(function(v,k){ if(!u.searchParams.has(k)) u.searchParams.set(k,v); });
+      if(!u.searchParams.has('src') && q.get('utm_source')) u.searchParams.set('src', q.get('utm_source'));
+      if(!u.searchParams.has('sck') && q.get('utm_content')) u.searchParams.set('sck', q.get('utm_content').slice(0,60));
+      a.href=u.toString();
+    }catch(e){}
+  });
+})();
+</script>
 </body>
 </html>
