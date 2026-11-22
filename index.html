@@ -419,6 +419,37 @@ body.encerrado .sticky{display:none}
   html{scroll-behavior:auto}
 }
 </style>
+<meta name="p:domain_verify" content="4a7d545e2684c98b45a8b2964d389254"/>
+<!-- Google tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y42FG24PFL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y42FG24PFL');
+</script>
+<!-- Hotmart Launcher -->
+<script id="hotmart_launcher_script">
+(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+hot('account','89df52d7-2f19-3b82-a763-77f307c7f19d');
+</script>
+<!-- Pinterest Tag -->
+<script>
+!function(e){if(!window.pintrk){window.pintrk = function () {
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+  n=window.pintrk;n.queue=[],n.version="3.0";var
+  t=document.createElement("script");t.async=!0,t.src=e;var
+  r=document.getElementsByTagName("script")[0];
+  r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+pintrk('load', '2613730600041');
+pintrk('page');
+pintrk('track', 'pagevisit');
+</script>
+<noscript><img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613730600041&noscript=1" /></noscript>
+<!-- end Pinterest Tag -->
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -429,6 +460,8 @@ document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href*="pay.hotmart.com"]'); if(!a) return;
   var combo=a.classList.contains('js-combo');
   fbq('track','InitiateCheckout',{content_name: combo?'Combo Ilustra Black 2026':'Avulso Ilustra Black 2026',value: combo?97:39.9,currency:'BRL'});
+  try{gtag('event','begin_checkout',{currency:'BRL',value: combo?97:39.9,items:[{item_name: combo?'Combo Ilustra Black 2026':'Avulso Ilustra Black 2026'}]})}catch(_){}
+  try{pintrk('track','addtocart',{value: combo?97:39.9,currency:'BRL'})}catch(_){}
 },true);
 </script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=914470052362036&ev=PageView&noscript=1" alt=""></noscript>
